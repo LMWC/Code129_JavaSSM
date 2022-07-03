@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+
+	<!--
+		SpringMVC程序中有且仅有一个Servlet 核心控制器 名称叫DispatcherServlet，负责接收所有请求，根据请求路径交给指定的Controller中的方法进行处理请求，给出响应
+	-->
+	<!--配置DispatcherServlet 同时要加载SpringMVC配置文件-->
+	<servlet>
+		<!--名称可以随便起-->
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!--配置初始化参数 DispatcherServlet对象创建初始化时加载springmvc.xml-->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springmvc.xml</param-value>
+		</init-param>
+		<!--配置启动项参数  希望服务器启动时就创建DispatcherServlet对象并加载SpringMVC配置文件  -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<!--
+		问题：DispatcherServlet的请求映射路径为什么配置为/？能不能配置为/* 、 *.do
+		解释：
+			1.可以配置为*.do 但是这样每次请求都需要携带.do  比较麻烦 不推荐
+			2.不能配置为/*
+				因为配置为/* 的时候，访问jsp页面在浏览器显示的是源码 并不是执行的结果
+				因为在tomcat中提供的有一个专门处理JSP请求的Servlet 叫JspServlet  它的请求映射路径配置的为*.jsp
+				而/*【目录匹配】 的优先级高于 *.jsp【后缀名匹配】 导致tomcat中原有的JspServlet不工作了
+			3.因此DispatcherServlet的请求映射路径最好配置为/
+				Servlet优先级：完全路径匹配>目录匹配>/*>扩展名匹配 【*.do *.jsp】>/【缺省 默认的】
+	-->
+	<!--配置DispatcherServlet请求访问路径-->
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>

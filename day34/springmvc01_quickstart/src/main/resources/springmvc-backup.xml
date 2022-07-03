@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--1.开启组件扫描-->
+    <!--作用：Spring不会自动识别java文件中的注解  需要开启注解扫描 让Spring主动去识别java文件中的注解 然后完成对应的功能操作-->
+    <context:component-scan base-package="com.itheima"/>
+
+    <!--
+        2. 开启MVC注解驱动支持
+            作用：
+                1.这个标签会帮助我们在项目里面导入三大组件【三大组件会自动导入】
+                2.后面用到的一些注解，必须要有这个标签的支撑，否则注解用不了！ eg：@RequestBody @ResponseBody ...
+            注意：
+                1.声明时一定要选择mvc的命名空间，如果选择到cache的命名空间，则会出现这个错误：No bean named 'cacheManager' available
+				原因：开启MVC注解驱动时 引入错了命名空间  应该引入的是mvc的  结果引入了cache的
+				解决：删除原来引入的命名空间  重新导入
+
+    -->
+    <!--2.开启MVC注解驱动-->
+    <mvc:annotation-driven/>
+
+    <!--
+        3. 视图解析器
+            3.1 视图解析器是搭配逻辑视图使用的，它要和方法的返回值拼接起来得到页面的真实路径
+                前缀  +  方法的返回值  +  后缀    ====   eg：/success.jsp
+            3.2 视图解析器一旦配置，就会对全局产生影响，所有的controller的方法返回值都要受到它的影响
+                除了某些方法之外【带前缀的物理视图 后面讲！】
+    -->
+    <!--3.配置视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+
+    <!--4.静态资源处理-->
+    <!--
+        现象：在SpringMVC程序中，如果不做任何配置  则用户不能直接访问webapp目录下的静态资源，访问时出现404找不到
+        原因：是因为SpringMVC中的DispatcherServlet配置的请求映射路径为/
+            把静态资源的请求接收到了 但是DispatcherServlet不能处理请求【原因是它把这个静态资源请求当做动态资源请求 找不到对应的Controller处理】
+            [WARNING] No mapping for GET /html/my.html
+            [WARNING] No mapping for GET /js/my.js
+            [WARNING] No mapping for GET /css/my.css
+        问题：为啥之前的web项目 静态资源可以被直接访问 不会出现404的情况？
+        原因：
+            1.之前没有使用SpringMVC  现在使用SpringMVC并且DispatcherServlet的请求映射路径设置的是/
+            2.因为在tomcat中有一个默认的Servlet负责处理静态资源 它的请求映射路径配置的也是/ 而现在DispatcherServlet配置的是/ 将tomcat中提供的默认Servlet覆盖了
+            3.所以就导致tomcat中提供的这个Servlet不生效 无法再继续处理静态资源了  而SpringMVC又不会处理 所以静态资源请求出现了404
+        解决：
+            1.DispatcherServlet的请求映射路径 不要设置为/  比如设置为*.do     Servlet优先级：完全路径匹配>目录匹配 /*>后缀名匹配 *.do>/
+                使用这种可以解决静态资源访问404的情况  但是在每次发起请求时都需要携带一个.do的尾巴 不推荐
+            2.在SpringMVC中配置静态资源处理【排除一些静态资源请求 不进行处理】
+                <mvc:resources mapping="/html/**" location="/html/"/>
+                <mvc:resources mapping="/css/**" location="/css/"/>
+                <mvc:resources mapping="/js/**" location="/js/"/>
+                注意：如果配置的是一个*号 eg：/html/*  就只能去html目录找资源         此时访问http://localhost/html/a/b/c/d/my.html就会出现404
+                     如果配置的是两个*号 eg：/html/**  就去html目录及其子目录下找资源  此时访问http://localhost/html/a/b/c/d/my.html就正常了
+
+            3.将静态资源的处理权利交还给tomcat提供的默认servlet DefaultServlet
+    -->
+    <!--<mvc:resources mapping="/html/**" location="/html/"/>
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+    <mvc:resources mapping="/img/**" location="/img/"/>-->
+    <!--<mvc:resources mapping="/statics/**" location="/statics/"/>-->
+
+    <mvc:default-servlet-handler/>
+
+</beans>
