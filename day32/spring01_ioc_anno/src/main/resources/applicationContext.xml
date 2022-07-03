@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+        XML方式实现：
+            1.创建UserDaoImpl类的bean对象
+            2.创建UserServiceImpl类的bean对象
+            3.将UserDaoImpl类的bean对象注入到UserServiceImpl类的bean对象中
+    -->
+    <!--<bean id="ud" class="com.itheima.dao.impl.UserDaoImpl" />
+
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl">
+        <property name="userDao" ref="ud"/>
+    </bean>-->
+
+
+    <!--注解方式实现
+        1.在UserDaoImpl和UserServiceImpl类上打上@Component注解      【IOC】
+        2.在在UserServiceImpl类中的UserDao属性上打上@Autowired注解    【DI】
+        3.在Spring配置文件中开启注解扫描
+    -->
+
+    <!--开启组件扫描-->
+    <!--
+        原因：Spring不会自动去扫描程序中哪些类上打了哪些注解，需要开启注解扫描之后，Spring才会主动的去到指定包下看看哪些类属性上存在哪些注解，然后工作
+        作用：让Spring去识别哪个包下的类上打的有哪些注解，Spring一旦识别到了，就会根据具体的注解完成指定的操作
+        使用：开启了注解扫描之后，Spring会自动的去com.itheima包及其子包下，发现哪些类、属性上打的有注解，
+            发现了UserDaoImpl类上的打的有@Component注解，就会直接创建UserDaoImpl类的bean对象，放入Spring IOC容器中管理起来
+            发现了UserServiceImpl类上的打的有@Component注解，就会直接创建UserServiceImpl类的bean对象，放入Spring IOC容器中管理起来
+            发现了UserServiceImpl类中userDao属性上打的有@Autowired注解，就会将IOC容器中管理的userDao对象注入进来
+        属性：
+            base-package ：基本包 ，可以写一个，也可以写多个，多个包之间可以使用空格、逗号隔开 建议使用逗号
+                实际开发建议：
+                    1.设置基本包时 使用项目共性包【公司组织域名倒置】 eg：com.itheima
+                    2.设置基本包时 范围不要太大 eg：com  项目开发中，会引入第三方的jar包 com.alibaba.JSON、com.alibaba.Druid
+    -->
+    <!--<context:component-scan base-package="com"/>-->
+    <context:component-scan base-package="com.itheima"/>
+    <!--<context:component-scan base-package="com.itheima.dao,com.itheima.service"/>-->
+
+</beans>

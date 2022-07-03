@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--创建UserServiceImpl对象-->
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl"/>
+
+    <!--创建增强类MyAdvice对象-->
+    <bean id="myAdvice" class="com.itheima.advice.MyAdvice"/>
+
+    <!--
+        aop:config标签：aop的配置 可以写多个
+           aop:aspect标签：用于将切入点和通知整合到一起 形成切面
+                ref属性：引用增强类对象
+                aop:before标签：前置增强
+                    method：增强代码所在的方法
+                    pointcut：切入点 也就是要进行增强的目标方法
+                        eg：使用myAdvice对象的print方法对UserServiceImpl的add方法进行前置增强
+    -->
+
+    <!--AOP配置-->
+    <aop:config>
+        <!--使用MyAdvice类中的print方法对UserServiceImpl类中的add方法进行前置增强-->
+        <aop:aspect ref="myAdvice">
+            <aop:before method="print" pointcut="execution(public void com.itheima.service.impl.UserServiceImpl.add())"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <!--使用MyAdvice类中的print方法对UserServiceImpl类中的add方法进行前置增强-->
+        <aop:aspect ref="myAdvice">
+            <aop:before method="print" pointcut="execution(public void com.itheima.service.impl.UserServiceImpl.update())"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--声明一个对象的创建-->
+    <!--一个bean表示一个java对象-->
+    <!--
+        bean标签：用于创建java类对象 交给Spring的IOC容器管理  可以有多个
+            掌握属性：
+                id：对象唯一标识  不能重复
+                class：对象全限定类名   【一般不能写抽象类或接口】
+           了解的属性：
+                name：为bean设置别名 可以设置多个别名 别名可以使用 逗号、分号、空格隔开  一般建议使用逗号隔开
+                scope：设置对象的作用范围 默认是singleton
+                    singleton：单例 创建一个对象放在Spring容器中管理 是单例的  也就是在程序运行期间，该对象在内存中有且仅有一个
+                    prototype：多例 创建一个对象放在Spring容器中管理 不是单例的
+                bean的声明周期：
+                    init-method：设置对象初始化方法       方法定义在实现类中  eg:UserServiceImpl
+                    destroy-method：设置对象的销毁方法    方法定义在实现类中  eg:UserServiceImpl
+                        注意事项：
+                            当scope=“singleton”时，spring容器中有且仅有一个对象，init方法在创建容器时仅执行一次
+                                当bean的使用范围为singleton时，创建Spring容器对象的同时会创建初始化bean对象
+                            当scope=“prototype”时，spring容器要创建同一类型的多个对象，init方法在每个对象创建时均执行一次
+                                当bean的使用范围为prototype时，找Spring容器要对象时才创建 要一次就创建一次
+                            当scope=“singleton”时，关闭容器会导致bean实例的销毁，调用destroy方法一次
+                            当scope=“prototype”时，对象的销毁由垃圾回收机制gc()控制，destroy方法将不会被执行
+
+    -->
+    <!--<bean id="us" class="com.itheima.service.impl.UserServiceImpl"></bean>-->
+
+    <!--name属性展示-->
+    <!--<bean id="us" name="aa,bb;cc dd" class="com.itheima.service.impl.UserServiceImpl"></bean>-->
+
+    <!--scope属性-->
+    <!--<bean id="us" class="com.itheima.service.impl.UserServiceImpl" scope="prototype"></bean>-->
+
+    <!-- init-method和destroy-method属性 -->
+    <!--<bean id="us" class="com.itheima.service.impl.UserServiceImpl" scope="prototype" init-method="init" destroy-method="destroy"></bean>-->
+
+
+    <!--============================================================bean对象创建的三种方式====================================================-->
+    <!-- 方式一：使用构造方法【推荐 常用】 -->
+    <!--Spring创建对象原理：读取配置文件，根据读取到bean标签的class属性值，使用反射调用类的无参构造方法创建类的对象 设置对象名称为id属性值-->
+    <!--<bean id="us" class="com.itheima.service.impl.UserServiceImpl"/>-->
+
+    <!--方式二：使用静态工厂创建bean对象 【不常用，作用是兼容早期旧项目】-->
+    <!--由静态工厂StaticFactory类调用getInstance方法创建UserServiceImpl类对象，设置对象的唯一标识为us， 交由Spring的IOC容器管理-->
+    <!--
+        factory-method：静态工厂类的创建对象的静态方法
+        class：静态工厂类
+    -->
+    <!--<bean id="us" factory-method="getInstance" class="com.itheima.factoy.StaticFactory"></bean>-->
+
+    <!--方式三：使用实例工厂创建bean对象 【不常用，作用是兼容早期旧项目】-->
+    <!--由实例工厂对象instanceFactory调用实例方法getInstance创建UserServiceImpl类对象，设置对象的唯一标识为us， 交由Spring的IOC容器管理-->
+    <!--1.创建实例工厂类对象-->
+    <!--<bean id="instanceFactory" class="com.itheima.factoy.InstanceFactory"/>-->
+
+    <!--2.由实例工厂类对象调用实例方法 创建对象-->
+    <!--
+        factory-bean：实例工厂对象
+        factory-method：实例工厂类中创建对象的实例方法
+    -->
+    <!--<bean id="us" factory-bean="instanceFactory" factory-method="getInstance" />-->
+
+
+
+    <!--
+        实际例子：
+            Spring整合MyBatis
+            Spring程序：Spring工厂【直接用Spring的工厂创建并管理对象】
+            MyBatis程序：MyBatis里面没有Spring,没有Spring工厂 MyBatis程序为了方便程序解耦 也会定义自己的工厂类用于创建对象
+
+            Spring要整合MyBatis:
+                让Spring工厂管理MyBatis工厂中创建出来的对象
+                因此：Spring为了方便其他的技术整合进来  就提供的了一个实例工厂接口 FactoryBean
+                      从而可以简化Spring程序整合其他技术中的工厂类创建出对象放入IOC容器管理
+
+            eg：MyBatis程序：定义工厂类时 你就实现一下Spring提供的工厂接口FactoryBean，到时候Spring整合你MyBatis程序工厂时就变得异常简单easy
+    -->
+    <!--方式四：使用FactoryBean编写实例工厂 创建对象交给Spring容器管理-->
+    <!--Spring会自动创建实例工厂类UserServiceFactoryBean的对象，调用实例方法getObject创建UserServiceImpl类对象，设置对象的唯一标识为us， 交由Spring的IOC容器管理-->
+    <!--
+       class：实例工厂类
+       id：为实例工厂类创建的对象设置唯一标识
+    -->
+    <!-- 使用场景：Spring程序整合其他技术，例如整合MyBatis... -->
+    <bean id="us" class="com.itheima.factoy.UserServiceFactoryBean" />
+
+
+
+
+</beans>
