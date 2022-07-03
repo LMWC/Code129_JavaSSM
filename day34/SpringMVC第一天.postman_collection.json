@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "68f4c385-433f-4b5f-88d1-30b09c7a903c",
+		"name": "SpringMVC第一天",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.获取请求参数",
+			"item": [
+				{
+					"name": "测试sayHi请求",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/sayHi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"sayHi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1_获取普通请求参数[get]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/getCommonParam01?name=zs&age=18&address=sz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getCommonParam01"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "zs"
+								},
+								{
+									"key": "age",
+									"value": "18"
+								},
+								{
+									"key": "address",
+									"value": "sz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2_获取普通请求参数[post]",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ls",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:80/getCommonParam01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getCommonParam01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3_获取pojo类型参数",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "zhaoliu",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "18",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "sz",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:80/getObjectParam03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getObjectParam03"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "wangwu",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "18",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4_获取数组或List集合类型参数",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/getListParam06?hobby=smoke&hobby=drink&hobby=hothead",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getListParam06"
+							],
+							"query": [
+								{
+									"key": "hobby",
+									"value": "smoke"
+								},
+								{
+									"key": "hobby",
+									"value": "drink"
+								},
+								{
+									"key": "hobby",
+									"value": "hothead"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05_获取日期类型参数",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/getDateParam07?date01=2020-05-31 15:02:10&date02=2021-05-31 15:02:10&date03=2022年05月31日 15:13:10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getDateParam07"
+							],
+							"query": [
+								{
+									"key": "date01",
+									"value": "2020-05-31 15:02:10"
+								},
+								{
+									"key": "date02",
+									"value": "2021-05-31 15:02:10"
+								},
+								{
+									"key": "date03",
+									"value": "2022年05月31日 15:13:10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06_获取json格式参数",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"王五\",\n\t\"age\":38\n}"
+						},
+						"url": {
+							"raw": "http://localhost:80/getJsonParam09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"getJsonParam09"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

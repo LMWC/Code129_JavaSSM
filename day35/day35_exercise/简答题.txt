@@ -1,0 +1,58 @@
+## 1.1 简答题一
+请简述SSM整合的实现步骤有哪些?
+答:
+SSM整合的步骤:
+	1.创建一个Maven的web工程，并在pom.xml添加对应的依赖
+	2.编写一个Servlet的配置类，该配置类需要继承AbstractAnnotationConfigDispatcherServletInitializer,
+	  并实现符类中的三个方法，分布用来加载spring配置类、springmvc配置类、配置springmvc拦截请求路径以及post的中文乱码过滤器
+		2.1编写spring配置类，在配置类中需要扫描service的包，读取外部配置文件，加载Mybatis相关配置，开启事务注解驱动
+			2.1.1创建Mybatis配置类，配置SqlSessionFactoryBean和MapperScannerConfigurer
+			2.1.2创建Jdbc配置类,配置DataSource与DataSourceTransactionManager
+		2.2编写SpringMvc配置类，在配置类中扫描controller的包，开启SpringMVC的注解支持
+
+## 1.2 简答题二
+请简述项目中如何处理异常的?
+答：
+项目中首先将异常进行分类，大概分为业务异常、系统异常和其他异常，针对不同的异常使用自定义异常来区分，在项目的个层如果碰到指定的异常，
+统一将异常网上抛出，最后在SpringMVC层使用全局异常处理器类来对异常进行统一处理。
+自定义异常的实现步骤为:1.编写全局异常处理器类，在类上添加@ControllerAdvice/@RestControllerAdvice,
+然后在类中针对不同的异常编写方法来进行处理，每个方法上添加@ExceptionHandler(异常类.class),在每个方法中就可以根据业务需求来进行不同的业务处理，
+比如记录日志、发送消息给运维人员，发送的方式可以通过邮件或者短信来进行发送
+
+## 1.3 简答题三
+请简述SpringMVC拦截器的使用步骤和应用场景?
+答:
+使用步骤:
+    1.编写拦截器类实现HandlerInterceptor接口
+    2.重写接口中的三个方法preHandle、postHandle、afterCompletion，
+        preHandle是在handle方法执行之前执行，返回true或者false,true代表放行，false代表拦截
+        postHandle是在handle方法执行之后执行
+        afterCompletion是拦截器最后执行的方法
+    3.配置拦截器类
+应用场景:
+	1.项目中进行鉴权，判断用户是否登录，以及判断用户是否具有访问资源的权限等
+	2.日志记录，可以对重要的业务进行日志记录，方便后期统计请求访问量
+	3.对项目的业务进行性能监控，监控请求处理时长等
+	4.通用行为，如果有多个处理器都需要的业务就可以考虑使用拦截器
+
+## 1.4 简答题四
+请简述拦截器和过滤器的区别是什么?
+答:
+1.拦截器是基于Java的反射机制而过滤器是基于函数回调
+2.拦截器不依赖Servlet容器，过滤器则依赖Servlet容器
+3.拦截器主要是针对springmvc的controller请求处理，而过滤器则可以针对集合所有请求起作用
+4.拦截器可以获取到controller类及对应方法的相关数据，过滤器则不能获取
+5.拦截器中可以使用spring容器中的bean对象，比如service对象，但是过滤器则不行
+6.过滤器先于拦截器执行
+
+## 1.5 简答题五
+简述SSM整合后前后端交互的流程是什么?
+答:
+	1.前端发送请求和数据到后台
+	2.后台根据业务创建数据库表
+	3.根据数据库表创建实体类
+	4.编写Controller类接收请求、接收数据、转发业务层
+	5.编写Service接口和实现类，调用Mapper层进行数据的增删改查
+	6.编写Mapper接口，在接口中编写方法与对用的SQL语句
+	7.controller将处理结果响应给前端
+	8.前端将后台返回的结果展示给用户

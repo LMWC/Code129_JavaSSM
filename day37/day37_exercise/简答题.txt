@@ -1,0 +1,51 @@
+## 1.1 简答题一
+请简述SpringBoot与Spring之间的关系并聊聊Spring存在的缺点有哪些?
+答:
+Spring中其实包含了若干个项目，我们通常所说的Spring其实指的是Spring Framework,它是Spring中的基础框架,
+其中包含我们比较熟悉IOC/DI和AOP。而SpringBoot则是用来快速构建Spring开发环境。
+Spring框架为什么不快，就是因为其中有两个地方使用起来比较繁琐:
+	第一个是导入jar包过于繁琐，我们需要解决jar包与jar包之间的依赖与版本冲突，
+	第二个是配置文件过于繁琐，所有需要交给Spring容器管理的bean对象都需要程序员进行配置使用。
+
+## 1.2 简答题二
+简述SpringBoot中起步依赖的原理是什么，解决的问题是什么?
+答：
+起步依赖的实现原理如下:
+1.我们自己的项目继承了spring-boot-starter-parent
+2.spring-boot-starter-parent继承了spring-boot-dependencies
+3.在spring-boot-dependencies中使用<dependencyManagement>标签管理了项目所需jar包对应的版本
+4.我们的项目在添加依赖的时候不需要再指定jar包版本，并且通过依赖传递可以将所需要的jar包引入到自己的项目中
+综上所述通过起步依赖，SpringBoot 帮我们管理了各个依赖的版本，使各个依赖不会出现版本冲突。
+
+## 1.3 简答题三
+简述SpringBoot支持的配置文件格式有哪几种，配置文件的优先级别从高到低分别是什么?
+答：
+SpringBoot支持三种配置文件，分布是properties，yaml和yml,
+配置文件的优先级别从高到低为:properties>yaml>yml
+
+## 1.4 简答题四
+简述SpringBoot中读取配置文件的三种方式分别是什么?
+答：
+方式一使用@Value注解获取
+方式二使用Environment对象获取
+方式三使用@ConfigurationProperties注解获取
+
+## 1.5 简答题五
+SpringBoot如何定义多套不同环境配置?
+答：
+常见的环境有生产环境(prod),测试环境(test)与开发环境(dev)。
+1.在springboot中对于properties配置文件，配置多环境可以使用多文件的方式，创建多个文档如：
+application.properties
+application-dev.properties
+application-test.properties
+application-prod.properties
+在不同的配置文件中配置不同的环境，然后通过属性 spring.profiles.active来指定使用具体的环境
+2.在springboot中对于yaml/yml配置文件，配置多环境可以使用多文档的方式，在配置文件中使用'---'来分割，如在application.yml或者application.yml中配置如下内容:
+    ---
+    #dev相关配置
+    ---
+    #test相关配置
+    ---
+    #prod相关配置
+    ---
+配置完后，可以使用spring.profiles.active来指定具体使用的环境
