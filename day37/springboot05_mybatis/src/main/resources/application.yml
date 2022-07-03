@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/day35_ssm?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  # 使用包 批量设置别名
+  type-aliases-package: com.itheima.bean
+  # 设置mapper映射文件路径
+  mapper-locations: com/shuaige/*Dao.xml
+  # 方便调试 会打印SQL语句到日志中
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

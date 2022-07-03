@@ -1,0 +1,14 @@
+# 多环境共用的公共配置
+lesson: SpringBoot
+
+enterprise:
+  name: itcast
+  age: 16
+  tel: 400600188
+  subject:
+    - Java
+    - 前端
+    - 大数据
+
+server:
+  port: 8090

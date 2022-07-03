@@ -1,0 +1,64 @@
+#server:
+#  port: 80
+#  1.大小写敏感
+#  2.属性层级关系使用多行描述，每行结尾使用冒号结束
+#  3.使用缩进表示层级关系，同层级左侧对齐，只允许使用空格（不允许使用Tab键）
+#  4.属性值前面添加空格（属性名与属性值之间使用冒号+空格作为分隔）
+#  5.表示注释
+
+# 以下这些配置到---之前的都属于不同的环境的公共配置
+lesson: springboot
+
+# enterpise.name
+enterprise:
+  name: itcast
+  age: 16
+  tel: 4006184000
+  # 数组
+  subject:
+    - Java
+    - 前端
+    - 大数据
+
+# 启用指定环境
+spring:
+  profiles:
+    active: pro
+
+
+
+# ---:表示一种环境配置 用于将不同环境下配置分隔开来 spring.profiles：设置环境id
+---
+# 生产环境
+spring:
+  config:
+    activate:
+      on-profile: pro
+server:
+  port: 80
+jdbc:
+  url: jdbc:mysql://127.0.0.2:3306/ssm
+  username: root
+  password: prod
+
+---
+# 开发环境
+spring:
+  profiles: dev
+server:
+  port: 82
+jdbc:
+  url: jdbc:mysql://127.0.0.1:3306/ssm
+  username: root
+  password: root
+
+---
+# 测试环境
+spring:
+  profiles: test
+server:
+  port: 84
+jdbc:
+  url: jdbc:mysql://127.0.0.3:3306/ssm
+  username: root
+  password: test

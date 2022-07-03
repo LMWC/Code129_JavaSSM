@@ -1,0 +1,39 @@
+# 多环境共用的公共配置
+lesson: SpringBoot
+
+enterprise:
+  name: itcast
+  age: 16
+  tel: 400600188
+  subject:
+    - Java
+    - 前端
+    - 大数据
+
+# 设置启动环境
+spring:
+  profiles:
+    active: test
+
+---
+# 生产环境
+spring:
+  profiles: pro
+server:
+  port: 80
+
+---
+# 开发环境
+spring:
+  profiles: dev
+server:
+  port: 82
+
+---
+# 测试环境
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 84

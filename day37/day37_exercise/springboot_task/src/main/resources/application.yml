@@ -1,0 +1,22 @@
+#Tom今年18岁，喜欢吃喝玩乐,有三套房，北京的1000万，上海的900万，深圳的999万
+user:
+  username: TOM
+  age: 18
+  hobbies:
+    - 吃
+    - 喝
+    - 玩
+    - 乐
+  hourses:
+    - city:
+      price: 1000万
+    - city: 上海
+      price: 900万
+    - city: 深圳
+      price: 999万
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssm_db
+    username: root
+    password: 123456
