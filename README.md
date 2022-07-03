@@ -1,23 +1,14 @@
 # Code129_JavaSSM  
 # **Code129_JavaSSM学习代码**  
-[**MySQL数据库文件（与每日示例与练习对应）**](https://github.com/LMWC/Code129_JavaWeb/tree/master/MySQL)  
-[**day14_MySQL基础**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day14/src)  
-[**day15_MySQL进阶**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day15/src)  
-[**day16_JDBC**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day16)  
-[**day17_反射、注解、动态代理**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day17)  
-[**day18_XML和Dom4j**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day18)  
-[**day19_maven和mybatis**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day19)  
-[**day20_mybatis**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day20)  
-[**day21_html&css**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day21)  
-[**day22_javascript**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day22)  
-[**day23_tomcat&http&servlet**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day23)  
-[**day24-request&response**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day24)  
-[**day25_会话技术**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day25)  
-[**day26_JSP三层架构**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day26)  
-[**day27_filter&listener**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day27)  
-[**day28_vue&ajax**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day28)  
-[**day29_elementui**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day29)  
-[**day30_综合案例**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day30)  
+[**MySQL数据库文件（与每日示例与练习对应）**](https://github.com/LMWC/Code129_JavaSSM/tree/master/MySQL)  
+[**day31-spring**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day31)  
+[**day32-spring**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day32)  
+[**day33-spring**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day33)  
+[**day34-springmvc**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day34)  
+[**day35-springmvc**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day35)  
+[**day36-maven**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day36)  
+[**day37-springboot**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day37)  
+[**day38-mybatisplus**](https://github.com/LMWC/Code129_JavaSSM/tree/master/day38)   
 
 
 
