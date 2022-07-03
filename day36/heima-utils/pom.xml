@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itheima</groupId>
+    <artifactId>heima-utils</artifactId>
+    <version>1.0-RELEASE</version>
+    <!--设置Maven项目JDK编译版本为1.8-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc</artifactId>
+            <version>14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.37</version>
+        </dependency>
+    </dependencies>
+
+    <!--设置发布项目到私服仓库地址-->
+    <distributionManagement>
+        <!--发行版本仓库地址-->
+        <repository>
+            <id>itheima-release</id>
+            <url>http://localhost:8081/repository/itheima-release/</url>
+        </repository>
+        <!--测试版本仓库地址-->
+        <snapshotRepository>
+            <id>itheima-snapshot</id>
+            <url>http://localhost:8081/repository/itheima-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

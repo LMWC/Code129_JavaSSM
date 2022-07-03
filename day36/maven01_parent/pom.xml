@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itheima</groupId>
+    <artifactId>maven01_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!--
+        聚合：将多个模块组织成一个整体的过程，称之为聚合
+        实现：
+            1.创建Maven工程 设置打包方式为pom
+            2.设置当前聚合工程 管理的模块moudles
+        作用：使用聚合工程可以实现管理多个模块同步构造
+
+        继承：创建一个父工程，设置打包方式为pom，在父工程中定义依赖坐标和可选依赖，让子工程使用 从而简化配置，减少版本冲突
+        实现：
+            1.创建一个Maven父工程 设置打包方式为pom
+            2.设置必选依赖的坐标dependencies
+            3.设置可选依赖的坐标dependencyManagement
+            4.在子工程中配置继承父工程
+            5.引用父工程中的可选依赖了
+
+       注意：实际开发中，聚合工程和继承的父工程是同一个
+       继承和聚合的区别：
+            作用：
+                聚合：用于管理多个模块，实现同步构建
+                继承：用于简化配置，减少jar包版本冲突
+           注意：
+                1.聚合和继承都是设计模块，项目中没有实际代码，只有一个pom.xml文件，设置项目打包方式为pom，实际开发 聚合和继承会使用同一个Maven工程
+                2.聚合是父工程知道管理哪些子工程  继承：子工程知道继承了哪个父工程
+    -->
+
+    <!--
+        Maven的属性管理：
+            作用：
+                1.设置当前项目的字符编码及JDK编译版本
+                2.设置项目中依赖jar包的版本  方便进行统一集中管理 从而减少jar包版本冲突【重要】
+    -->
+    <!--maven的属性管理-->
+    <properties>
+        <!--1.自定义属性  属性名称=标签名称  属性值=标签体内容-->
+        <spring.version>5.1.2.RELEASE</spring.version>
+        <junit.version>4.13</junit.version>
+        <!--<jdbc.url>jdbc:mysql://localhost:3306/day35_ssm?useSSL=false&amp;serverTimezone=UTC</jdbc.url>-->
+    </properties>
+
+    <!--聚合工程模块管理-->
+    <modules>
+        <module>../maven_ssm</module>
+        <module>../maven02_pojo</module>
+        <module>../maven03_dao</module>
+        <module>../maven04_service</module>
+    </modules>
+
+    <!--必选依赖：子工程 一旦继承了父工程，就具有了这些依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <!--使用Maven属性  语法：${属性名称}-->
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
+
+    <!--可选依赖-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.76</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.23</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!--多环境配置-->
+    <!--定义多套环境-->
+    <profiles>
+        <!--开发环境-->
+        <profile>
+            <!--环境的唯一标识-->
+            <id>env_dev</id>
+            <!--当前环境下的参数配置-->
+            <properties>
+                <jdbc.url>
+                    <![CDATA[
+                        jdbc:mysql://127.0.0.1:3306/day35_ssm?useSSL=false&amp;serverTimezone=UTC
+                    ]]>
+                </jdbc.url>
+            </properties>
+            <!--指定打包启动默认环境-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <!--测试环境-->
+        <profile>
+            <!--环境的唯一标识-->
+            <id>env_test</id>
+            <!--当前环境下的参数配置-->
+            <properties>
+                <jdbc.url>jdbc:mysql://127.0.0.2:3306/day35_ssm?useSSL=false&amp;serverTimezone=UTC</jdbc.url>
+            </properties>
+
+        </profile>
+
+        <!--生产环境-->
+        <profile>
+            <!--环境的唯一标识-->
+            <id>env_pro</id>
+            <!--当前环境下的参数配置-->
+            <properties>
+                <jdbc.url>jdbc:mysql://127.0.0.3:3306/day35_ssm?useSSL=false&amp;serverTimezone=UTC</jdbc.url>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <!--开启资源文件目录加载属性的过滤器  如果不开启 Maven项目编译时不会读取加载src/main/resources下面的文件-->
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <!--配置Maven打war包插件 忽略web.xml文件-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+            <!--跳过测试插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <!--
+                    跳过测试：
+                        粗粒度配置：设置skipTests为true  会跳过当前项目中的所有单元测试
+                        细粒度配置：设置skipTests为false  includes：表示打包时会执行的测试代码  excludes： 表示打包时不会执行的测试代码
+                -->
+                <configuration>
+                    <skipTests>false</skipTests>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <!--<excludes>
+                        <exclude>**/*Test.java</exclude>
+                    </excludes>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
