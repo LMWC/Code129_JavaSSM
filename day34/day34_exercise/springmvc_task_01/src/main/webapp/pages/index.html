@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+    <div id="app">
+        <el-button type="success" @click="toAddGoods"> + 添加</el-button>
+        <el-table
+                :data="commodityList"
+                style="width: 100%">
+            <el-table-column
+                    prop="name"
+                    label="商品名称"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="price"
+                    label="售价"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="costprice"
+                    label="进价"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="surplusnum"
+                    label="库存量"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="allnum"
+                    label="总销量"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    label="创建时间"
+                    width="180">
+                <template slot-scope="scope">
+                    <span style="margin-left: 10px">{{ scope.row.created }}</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+        <el-dialog title="商品新增" :visible.sync="dialogFormVisible">
+            <el-form :model="formData">
+                <el-form-item label="商品名称" :label-width="formLabelWidth">
+                    <el-input v-model="formData.name"></el-input>
+                </el-form-item>
+                <el-form-item label="商品售价" :label-width="formLabelWidth">
+                    <el-input v-model="formData.price"></el-input>
+                </el-form-item>
+                <el-form-item label="商品进价" :label-width="formLabelWidth">
+                    <el-input v-model="formData.costprice"></el-input>
+                </el-form-item>
+                <el-form-item label="库存量" :label-width="formLabelWidth">
+                    <el-input v-model="formData.surplusnum"></el-input>
+                </el-form-item>
+                <el-form-item label="总销量" :label-width="formLabelWidth">
+                    <el-input v-model="formData.allnum"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="addGoods">确 定</el-button>
+            </div>
+        </el-dialog>
+        <el-dialog title="商品修改" :visible.sync="dialogEditFormVisible">
+            <el-form :model="editFormData">
+                <el-form-item label="商品名称" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.name"></el-input>
+                </el-form-item>
+                <el-form-item label="商品售价" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.price"></el-input>
+                </el-form-item>
+                <el-form-item label="商品进价" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.costprice"></el-input>
+                </el-form-item>
+                <el-form-item label="库存量" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.surplusnum"></el-input>
+                </el-form-item>
+                <el-form-item label="总销量" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.allnum"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogEditFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="editGoods">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                dialogFormVisible:false,
+                dialogEditFormVisible:false,
+                formLabelWidth: '120px',
+                editFormData:{},
+                formData:{
+                },
+                commodityList: [{
+                    "id":1,
+                    "name":"小米手机",
+                    "price":1269,
+                    "costprice":1000,
+                    "surplusnum":1000,
+                    "allnum":5000,
+                    "created":"2022-11-11"
+                }, {
+                    "id":2,
+                    "name":"华为荣耀手机",
+                    "price":2269,
+                    "costprice":2000,
+                    "surplusnum":2000,
+                    "allnum":3000,
+                    "created":"2022-11-11"
+                }, {
+                    "id":3,
+                    "name":"小米手机",
+                    "price":1269,
+                    "costprice":1000,
+                    "surplusnum":1000,
+                    "allnum":5000,
+                    "created":"2022-11-11"
+                }, {
+                    "id":4,
+                    "name":"Apple13PROMAX",
+                    "price":9799,
+                    "costprice":1000,
+                    "surplusnum":4000,
+                    "allnum":6000,
+                    "created":"2022-11-11"
+                }]
+            },
+            methods:{
+                toAddGoods(){
+                    this.dialogFormVisible = true;
+                },
+                addGoods(){
+                    //发送新增商品的请求
+                    axios.post('/goods',this.formData).then(res=>{
+                        this.$message.success("新增成功");
+                    })
+                    this.dialogFormVisible = false;
+                },
+                handleEdit(index, row) {
+                    this.dialogEditFormVisible = true;
+                    this.editFormData = row;
+                },
+                editGoods(){
+                    //发送修改商品的请求
+                    axios.put("/goods",this.editFormData).then(res=>{
+                        this.$message.success("修改成功");
+                    })
+                    this.dialogEditFormVisible = false;
+                },
+                handleDelete(index, row) {
+                    this.$confirm('请确定要删除该数据?',"提示").then(()=>{
+                        //发送删除商品的请求,row.id为所选数据中的id
+                        axios.delete('/goods/'+row.id).then(res=>{
+                            this.$message.success("删除成功");
+                        })
+                    }).catch(()=>{
+                        this.$message.info("取消删除操作");
+                    });
+                },
+                findAll(){
+                    //发送查询商品列表请求
+                    axios.get('/goods').then(res=>{
+                        this.commodityList = res.data;
+                    })
+                }
+            },
+            //在渲染html页面之前执行
+            created(){
+                //调用methods中的findAll方法
+                this.findAll();
+            }
+        });
+    </script>
+</body>
+</html>

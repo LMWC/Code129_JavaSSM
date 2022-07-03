@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--1.开启组件扫描-->
+    <context:component-scan base-package="com.itheima"/>
+
+    <!--2.开启MVC注解驱动-->
+    <mvc:annotation-driven/>
+
+    <!--3.配置视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!--4.静态资源处理-->
+    <mvc:default-servlet-handler/>
+
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <!--使用MyInterceptor拦截器去拦截/show的请求  当然注意/show的请求时Controller类中的-->
+        <mvc:interceptor>
+            <!--配置当前拦截器拦截路径：某个|某类地址   拦截路径可以配置多个-->
+            <!--
+                拦截具体请求：/show
+                拦截某类请求：/show*  /users/**    【推荐使用】
+                拦截所有请求：/**     表示拦截DispatcherServlet接收到的所有请求
+                    注意：/* 只能批量当前目录下的请求  /**：可以批量当前目录及其子目录的所有请求    /表示的就是当前项目请求地址：http://localhost:80/
+            -->
+            <mvc:mapping path="/users/**"/>
+            <!--配置当前拦截器类  拦截器类只能配置一个-->
+            <bean class="com.itheima.interceptor.MyInterceptor"/>
+        </mvc:interceptor>
+
+        <!--需求：配置多个拦截器拦截/show请求-->
+        <mvc:interceptor>
+            <mvc:mapping path="/show"/>
+            <bean class="com.itheima.interceptor.MyInterceptor01"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/show"/>
+            <bean class="com.itheima.interceptor.MyInterceptor02"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/show"/>
+            <bean class="com.itheima.interceptor.MyInterceptor03"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

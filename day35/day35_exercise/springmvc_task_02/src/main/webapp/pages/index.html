@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="/element-ui/lib/index.js"></script>
+    <style>
+        .avatar-uploader .el-upload {
+            border: 1px dashed #d9d9d9;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .avatar-uploader .el-upload:hover {
+            border-color: #409EFF;
+        }
+        .avatar-uploader-icon {
+            font-size: 28px;
+            color: #8c939d;
+            width: 178px;
+            height: 178px;
+            line-height: 178px;
+            text-align: center;
+        }
+        .avatar {
+            width: 178px;
+            height: 178px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <el-button type="success" @click="toAddGame"> + 添加</el-button>
+        <el-table
+                :data="gameList"
+                style="width: 100%">
+            <el-table-column
+                    label="游戏图片"
+                    width="180">
+                <template slot-scope="scope">
+                    <img :src="scope.row.url" width="60" height="60">
+                </template>
+            </el-table-column>
+            <el-table-column
+                    prop="name"
+                    label="游戏名称"
+                    width="280">
+            </el-table-column>
+            <el-table-column
+                    prop="type"
+                    label="游戏类别"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="ordered"
+                    label="排名"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="company"
+                    label="所属公司"
+                    width="380">
+            </el-table-column>
+            <el-table-column label="操作">
+                <template slot-scope="scope">
+                    <el-button
+                            size="mini"
+                            @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                    <el-button
+                            size="mini"
+                            type="danger"
+                            @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                </template>
+            </el-table-column>
+        </el-table>
+        <el-dialog title="新增游戏" :visible.sync="dialogFormVisible">
+            <el-form :model="formData">
+                <el-form-item label="游戏图片" :label-width="formLabelWidth">
+                    <el-upload
+                            class="avatar-uploader"
+                            action="/game/upload"
+                            :show-file-list="false"
+                            :on-success="handleAvatarSuccess"
+                            :before-upload="beforeAvatarUpload">
+                        <img v-if="formData.url" :src="formData.url" class="avatar">
+                        <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                    </el-upload>
+                </el-form-item>
+                <el-form-item label="游戏名称" :label-width="formLabelWidth">
+                    <el-input v-model="formData.name"></el-input>
+                </el-form-item>
+                <el-form-item label="所属类别" :label-width="formLabelWidth">
+                    <el-input v-model="formData.type"></el-input>
+                </el-form-item>
+                <el-form-item label="游戏排名" :label-width="formLabelWidth">
+                    <el-input v-model="formData.ordered"></el-input>
+                </el-form-item>
+                <el-form-item label="所属公司" :label-width="formLabelWidth">
+                    <el-input v-model="formData.company"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="addGoods">确 定</el-button>
+            </div>
+        </el-dialog>
+        <el-dialog title="游戏修改" :visible.sync="dialogEditFormVisible">
+            <el-form :model="editFormData">
+                <el-form-item label="游戏图片" :label-width="formLabelWidth">
+                    <el-upload
+                            class="avatar-uploader"
+                            action="/game/upload"
+                            :show-file-list="false"
+                            :on-success="handleAvatarSuccess"
+                            :before-upload="beforeAvatarUpload">
+                        <img v-if="editFormData.url" :src="editFormData.url" class="avatar">
+                        <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                    </el-upload>
+                </el-form-item>
+                <el-form-item label="游戏名称" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.name"></el-input>
+                </el-form-item>
+                <el-form-item label="所属类别" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.type"></el-input>
+                </el-form-item>
+                <el-form-item label="游戏排名" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.ordered"></el-input>
+                </el-form-item>
+                <el-form-item label="所属公司" :label-width="formLabelWidth">
+                    <el-input v-model="editFormData.company"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogEditFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="editGoods">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                dialogFormVisible:false,
+                dialogEditFormVisible:false,
+                formLabelWidth: '120px',
+                editFormData:{},
+                paramForm:{},
+                formData:{
+                    url:''
+                },
+                imageUrl:'',
+                gameList: [{
+                    "id":1,
+                    "name":"王者荣耀",
+                    "type":"动作",
+                    "url":"/images/3966332d-a2d2-4b57-9f73-bc2b454adac2.jpg",
+                    "ordered":"1名",
+                    "company":"Tencent Mobile Games"
+                },{
+                    "id":2,
+                    "name":"和平精英",
+                    "type":"动作",
+                    "url":"/images/833d90ae-3510-4fc3-9792-245b0dcef612.jpg",
+                    "ordered":"2名",
+                    "company":"Tencent Mobile Games"
+                },{
+                    "id":3,
+                    "name":"圣魂纷争",
+                    "type":"角色扮演",
+                    "url":"/images/b02979b8-8cda-4cff-ac1d-6eb2f8fca8e7.jpg",
+                    "ordered":"1名",
+                    "company":"海南游翼"
+                }]
+            },
+            methods:{
+                handleAvatarSuccess(res, file) {
+                    this.formData.url = res.data;
+                },
+                beforeAvatarUpload(file) {
+                    const isJPG = file.type === 'image/jpeg';
+                    const isLt2M = file.size / 1024 / 1024 < 10;
+
+                    if (!isJPG) {
+                        this.$message.error('上传头像图片只能是 JPG 格式!');
+                    }
+                    if (!isLt2M) {
+                        this.$message.error('上传头像图片大小不能超过 10MB!');
+                    }
+                    return isJPG && isLt2M;
+                },
+                onSubmit(){
+
+                },
+                toAddGame (){
+                    this.dialogFormVisible = true;
+                },
+                addGoods(){
+                    //TODO:完成商品新增的请求发送
+                    axios.post('/game',this.formData).then(res=>{
+                        if(res.data.code == 20011){
+                            this.$message.success(res.data.msg);
+                        }else{
+                            this.$message.error(res.data.msg);
+                        }
+                    }).finally(()=>{
+                        this.findAll();
+                    });
+                    this.dialogFormVisible = false;
+                },
+                handleEdit(index, row) {
+                    this.dialogEditFormVisible = true;
+                    this.editFormData = row;
+                },
+                editGoods(){
+                    //TODO:完成商品修改的请求发送
+                    axios.put('/game',this.editFormData).then(res=>{
+                        if(res.data.code == 20031){
+                            this.$message.success(res.data.msg);
+                        }else{
+                            this.$message.error(res.data.msg);
+                        }
+                    }).finally(()=>{
+                        this.findAll();
+                    });
+                    this.dialogEditFormVisible = false;
+                },
+                handleDelete(index, row) {
+                    this.$confirm('请确定要删除该数据?',"提示").then(()=>{
+                        //TODO:完成根据ID删除商品信息的请求发送
+                        axios.delete('/game/'+row.id).then(res=>{
+                            if(res.data.code == 20021){
+                                this.$message.success(res.data.msg);
+                            }else{
+                                this.$message.error(res.data.msg);
+                            }
+                        }).finally(()=>{
+                            this.findAll();
+                        });
+                    }).catch(()=>{
+                        this.$message.info("取消删除操作");
+                    });
+                },
+                findAll(){
+                    //TODO:完成商品列表查询的请求发送
+                    axios.get("/game").then(res=>{
+                        if(res.data.code == 20041){
+                            this.gameList = res.data.data;
+                        }else{
+                            this.$message.error(res.data.msg);
+                        }
+                    })
+                }
+            },
+            //在渲染html页面之前执行
+            created(){
+                //调用methods中的findAll方法
+                this.findAll();
+            }
+        });
+    </script>
+</body>
+</html>

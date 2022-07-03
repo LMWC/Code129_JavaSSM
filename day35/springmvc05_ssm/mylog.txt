@@ -1,0 +1,1226 @@
+14:59:37,513  INFO DispatcherServlet:521 - Initializing Servlet 'springmvc'
+14:59:37,526 DEBUG XmlWebApplicationContext:590 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+14:59:37,713 DEBUG XmlBeanDefinitionReader:395 - Loaded 4 bean definitions from class path resource [applicationContext.xml]
+14:59:37,713 DEBUG XmlBeanDefinitionReader:395 - Loaded 26 bean definitions from class path resource [springmvc.xml]
+14:59:37,740 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:59:37,804 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+14:59:37,820 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:59:37,823  WARN ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+14:59:37,824 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+14:59:37,840 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.driverClass]
+14:59:37,841 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.driverClass] not found - trying original name [jdbc.driverClass]. javax.naming.NameNotFoundException: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].
+14:59:37,842 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.driverClass]
+14:59:37,842 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.driverClass] threw NamingException with message: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].. Returning null.
+14:59:37,842 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driverClass' in PropertySource 'localProperties' with value of type String
+14:59:37,843 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+14:59:37,843 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+14:59:37,844 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.url]
+14:59:37,844 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+14:59:37,844 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+14:59:37,845 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+14:59:37,845 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+14:59:37,845 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.username]
+14:59:37,845 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+14:59:37,845 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+14:59:37,846 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+14:59:37,846 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+14:59:37,846 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.password]
+14:59:37,846 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+14:59:37,846 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+14:59:37,847 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:59:37,848 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:59:37,850 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:59:37,851 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:59:37,854 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@3a328b26]
+14:59:37,856 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+14:59:37,877 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+14:59:37,901 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+14:59:37,903 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+14:59:37,907 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+14:59:38,032 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+14:59:38,227 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+14:59:38,249 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+14:59:38,266 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+14:59:38,269 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+14:59:38,292 DEBUG ExceptionHandlerExceptionResolver:302 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+14:59:38,292 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+14:59:38,295 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+14:59:38,296 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+14:59:38,303 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+14:59:38,304 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+14:59:38,304 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+14:59:38,313 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+14:59:38,315 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+14:59:38,319 DEBUG SimpleUrlHandlerMapping:139 - Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+14:59:38,319 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+14:59:38,367 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+14:59:38,376 DEBUG SqlSessionFactoryBean:49 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+14:59:38,429 DEBUG SqlSessionFactoryBean:49 - Property 'mapperLocations' was not specified.
+14:59:38,453 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+14:59:38,454 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+14:59:38,454 DEBUG JndiTemplate:154 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+14:59:38,454 DEBUG JndiPropertySource:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+14:59:38,456 DEBUG DispatcherServlet:538 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+14:59:38,457  INFO DispatcherServlet:543 - Completed initialization in 943 ms
+15:00:14,346 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+15:00:14,351 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,356 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,402 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+15:00:14,402 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+15:00:14,403 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,403 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,404 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,404 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,409 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+15:00:14,410 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+15:00:14,410 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+15:00:14,410 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+15:00:14,410 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+15:00:14,410 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,410 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,410 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,411 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,410 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,410 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,412 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,413 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,413 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,415 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:00:14,536 DEBUG DispatcherServlet:90 - GET "/favicon.ico", parameters={}
+15:00:14,537 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@1538aaf7
+15:00:14,537 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+15:20:52,579  INFO DispatcherServlet:521 - Initializing Servlet 'springmvc'
+15:20:52,597 DEBUG XmlWebApplicationContext:590 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+15:20:52,843 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\workspace\java129\day35\springmvc05_ssm\target\classes\com\itheima\controller\BookController.class]
+15:20:52,847 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [D:\workspace\java129\day35\springmvc05_ssm\target\classes\com\itheima\service\impl\BookServiceImpl.class]
+15:20:52,930 DEBUG XmlBeanDefinitionReader:395 - Loaded 10 bean definitions from class path resource [applicationContext.xml]
+15:20:52,931 DEBUG XmlBeanDefinitionReader:395 - Loaded 34 bean definitions from class path resource [springmvc.xml]
+15:20:52,971 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+15:20:53,050 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+15:20:53,069 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:20:53,073 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [D:\workspace\java129\day35\springmvc05_ssm\target\classes\com\itheima\dao\BookDao.class]
+15:20:53,074 DEBUG ClassPathMapperScanner:49 - Creating MapperFactoryBean with name 'bookDao' and 'com.itheima.dao.BookDao' mapperInterface
+15:20:53,074 DEBUG ClassPathMapperScanner:49 - Enabling autowire by type for MapperFactoryBean with name 'bookDao'.
+15:20:53,076 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+15:20:53,092 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.driverClass]
+15:20:53,095 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.driverClass] not found - trying original name [jdbc.driverClass]. javax.naming.NameNotFoundException: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].
+15:20:53,095 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.driverClass]
+15:20:53,096 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.driverClass] threw NamingException with message: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].. Returning null.
+15:20:53,097 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driverClass' in PropertySource 'localProperties' with value of type String
+15:20:53,097 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+15:20:53,097 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+15:20:53,097 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.url]
+15:20:53,097 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+15:20:53,098 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+15:20:53,098 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+15:20:53,098 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+15:20:53,098 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.username]
+15:20:53,099 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+15:20:53,099 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+15:20:53,099 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+15:20:53,099 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+15:20:53,100 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.password]
+15:20:53,100 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+15:20:53,100 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+15:20:53,101 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+15:20:53,103 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+15:20:53,103 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+15:20:53,105 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+15:20:53,106 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+15:20:53,107 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+15:20:53,136 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1dfe1e6f]
+15:20:53,137 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookController'
+15:20:53,159 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookServiceImpl'
+15:20:53,160 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookDao'
+15:20:53,172 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+15:20:53,173 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+15:20:53,226 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:20:53,227 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:20:53,262 DEBUG SqlSessionFactoryBean:49 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+15:20:53,307 DEBUG SqlSessionFactoryBean:49 - Property 'mapperLocations' was not specified.
+15:20:53,345 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+15:20:53,355 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+15:20:53,377 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+15:20:53,380 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+15:20:53,382 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+15:20:53,450 DEBUG RequestMappingHandlerMapping:332 - 5 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+15:20:53,451 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+15:20:53,659 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+15:20:53,699 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+15:20:53,716 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+15:20:53,719 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+15:20:53,738 DEBUG ExceptionHandlerExceptionResolver:302 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+15:20:53,740 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+15:20:53,743 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+15:20:53,745 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+15:20:53,751 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+15:20:53,752 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+15:20:53,752 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+15:20:53,763 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+15:20:53,766 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+15:20:53,771 DEBUG SimpleUrlHandlerMapping:139 - Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+15:20:53,773 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'transactionManager'
+15:20:53,784 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+15:20:53,809 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+15:20:53,810 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+15:20:53,810 DEBUG JndiTemplate:154 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+15:20:53,810 DEBUG JndiPropertySource:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+15:20:53,812 DEBUG DispatcherServlet:538 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+15:20:53,812  INFO DispatcherServlet:543 - Completed initialization in 1231 ms
+15:22:20,274 DEBUG DispatcherServlet:90 - POST "/books", parameters={}
+15:22:20,279 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.add(com.itheima.bean.Book)
+15:22:20,343 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json" to [Book{id=null, type='小说', name='剑来', description='我有一剑 可开天 可辟地'}]
+15:22:20,356 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.add]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:22:20,407  INFO DruidDataSource:983 - {dataSource-1} inited
+15:22:20,567 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:22:20,571 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:22:20,577 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:22:20,581 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44ce9241]
+15:22:20,586 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:22:20,590 DEBUG add:159 - ==>  Preparing: insert into tbl_book values(null,?,?,?) 
+15:22:20,607 DEBUG add:159 - ==> Parameters: 小说(String), 剑来(String), 我有一剑 可开天 可辟地(String)
+15:22:20,609 DEBUG add:159 - <==    Updates: 1
+15:22:20,610 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44ce9241]
+15:22:20,610 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44ce9241]
+15:22:20,611 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44ce9241]
+15:22:20,611 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44ce9241]
+15:22:20,612 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:22:20,612 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:22:20,619 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:22:20,620 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:22:20,635 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:22:20,635 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20011, msg='null', data=true}]
+15:22:20,653 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:24:10,800 DEBUG DispatcherServlet:90 - PUT "/books", parameters={}
+15:24:10,800 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book)
+15:24:10,803 DEBUG ServletInvocableHandlerMethod:174 - Could not resolve parameter [0] in public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 3, column: 3]
+15:24:10,805  WARN DefaultHandlerExceptionResolver:194 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (PushbackInputStream); line: 3, column: 3]]
+15:24:10,805 DEBUG DispatcherServlet:1123 - Completed 400 BAD_REQUEST
+15:24:21,560 DEBUG DispatcherServlet:90 - PUT "/books", parameters={}
+15:24:21,560 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book)
+15:24:21,561 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json" to [Book{id=13, type='小说', name='完美世界', description='我有一剑 可开天 可辟地666'}]
+15:24:21,561 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:24:21,566 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:24:21,566 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:24:21,567 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:24:21,568 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661df225]
+15:24:21,568 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:24:21,568 DEBUG update:159 - ==>  Preparing: update tbl_book set type=?,name=?,description=? where id=? 
+15:24:21,569 DEBUG update:159 - ==> Parameters: 小说(String), 完美世界(String), 我有一剑 可开天 可辟地666(String), 13(Integer)
+15:24:21,571 DEBUG update:159 - <==    Updates: 1
+15:24:21,571 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661df225]
+15:24:21,571 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661df225]
+15:24:21,571 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661df225]
+15:24:21,571 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661df225]
+15:24:21,572 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:24:21,572 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:24:21,579 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:24:21,580 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:24:21,580 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:24:21,581 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20031, msg='null', data=true}]
+15:24:21,581 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:24:44,030 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+15:24:44,031 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+15:24:44,032 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:24:44,032 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:24:44,032 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:24:44,033 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:24:44,033 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222247df]
+15:24:44,036 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:24:44,036 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+15:24:44,036 DEBUG selectAll:159 - ==> Parameters: 
+15:24:44,046 DEBUG selectAll:159 - <==      Total: 13
+15:24:44,046 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222247df]
+15:24:44,046 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222247df]
+15:24:44,046 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222247df]
+15:24:44,047 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222247df]
+15:24:44,047 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:24:44,047 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:24:44,048 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:24:44,048 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:24:44,048 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:24:44,049 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=13, type='小说', name='完美世界', description='我有一剑 可开天 可辟地666'}]}]
+15:24:44,053 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:25:00,219 DEBUG DispatcherServlet:90 - GET "/books/13", parameters={}
+15:25:00,220 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectById(java.lang.Integer)
+15:25:00,224 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:25:00,224 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:25:00,225 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:25:00,225 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:25:00,226 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a142e88]
+15:25:00,226 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:25:00,226 DEBUG selectById:159 - ==>  Preparing: select * from tbl_book where id=? 
+15:25:00,227 DEBUG selectById:159 - ==> Parameters: 13(Integer)
+15:25:00,229 DEBUG selectById:159 - <==      Total: 1
+15:25:00,230 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a142e88]
+15:25:00,230 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a142e88]
+15:25:00,230 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a142e88]
+15:25:00,230 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a142e88]
+15:25:00,230 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:25:00,230 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:25:00,232 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:25:00,232 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:25:00,233 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:25:00,233 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20041, msg='null', data=Book{id=13, type='小说', name='完美世界', description='我有一剑 可开天 可辟地666'}}]
+15:25:00,235 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:25:24,991 DEBUG DispatcherServlet:90 - DELETE "/books/13", parameters={}
+15:25:24,991 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.delete(java.lang.Integer)
+15:25:24,992 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:25:24,992 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:25:24,992 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:25:24,993 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:25:24,993 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2992a889]
+15:25:24,993 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:25:24,994 DEBUG delete:159 - ==>  Preparing: delete from tbl_book where id=? 
+15:25:24,994 DEBUG delete:159 - ==> Parameters: 13(Integer)
+15:25:24,998 DEBUG delete:159 - <==    Updates: 1
+15:25:24,999 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2992a889]
+15:25:24,999 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2992a889]
+15:25:25,000 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2992a889]
+15:25:25,000 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2992a889]
+15:25:25,000 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:25:25,000 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:25:25,006 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:25:25,006 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:25:25,007 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:25:25,007 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20021, msg='null', data=true}]
+15:25:25,008 DEBUG DispatcherServlet:1123 - Completed 200 OK
+15:25:30,554 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+15:25:30,554 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+15:25:30,555 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+15:25:30,555 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] for JDBC transaction
+15:25:30,555 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] to manual commit
+15:25:30,555 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+15:25:30,556 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@574428d4]
+15:25:30,556 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] will be managed by Spring
+15:25:30,556 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+15:25:30,557 DEBUG selectAll:159 - ==> Parameters: 
+15:25:30,559 DEBUG selectAll:159 - <==      Total: 12
+15:25:30,559 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@574428d4]
+15:25:30,559 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@574428d4]
+15:25:30,560 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@574428d4]
+15:25:30,560 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@574428d4]
+15:25:30,560 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+15:25:30,560 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@716fc79e]
+15:25:30,561 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@716fc79e] after transaction
+15:25:30,561 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+15:25:30,562 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+15:25:30,562 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+15:25:30,563 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:10:05,663 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:10:05,665 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:10:05,671 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:10:05,772 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:10:05,773 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:10:05,773 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:10:05,780 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:10:05,780 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:10:05,781 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:10:05,782 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb85bc5]
+16:10:05,782 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:10:05,782 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:10:05,782 DEBUG selectAll:159 - ==> Parameters: 
+16:10:05,785 DEBUG selectAll:159 - <==      Total: 12
+16:10:05,786 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb85bc5]
+16:10:05,786 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb85bc5]
+16:10:05,786 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb85bc5]
+16:10:05,786 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fb85bc5]
+16:10:05,786 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:10:05,786 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:10:05,788 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:10:05,788 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:10:05,789 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:10:05,789 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+16:10:05,790 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:12:40,361 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:12:40,362 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:12:40,363 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:12:40,483 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:12:40,483 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:12:40,484 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:12:40,484 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:12:40,484 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:12:40,485 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:12:40,485 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d239ce]
+16:12:40,485 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:12:40,486 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:12:40,486 DEBUG selectAll:159 - ==> Parameters: 
+16:12:40,488 DEBUG selectAll:159 - <==      Total: 12
+16:12:40,490 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d239ce]
+16:12:40,490 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d239ce]
+16:12:40,490 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d239ce]
+16:12:40,490 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48d239ce]
+16:12:40,491 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:12:40,491 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:12:40,492 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:12:40,492 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:12:40,493 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:12:40,494 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+16:12:40,494 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:12:41,545 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/fonts/element-icons.woff", parameters={}
+16:12:41,546 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:12:41,553 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:16:48,731 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:16:48,732 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:16:48,733 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:16:48,836 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:16:48,837 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:16:48,837 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:16:48,838 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:16:48,838 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:16:48,839 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:16:48,839 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e0cd805]
+16:16:48,839 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:16:48,840 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:16:48,841 DEBUG selectAll:159 - ==> Parameters: 
+16:16:48,843 DEBUG selectAll:159 - <==      Total: 12
+16:16:48,844 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e0cd805]
+16:16:48,845 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e0cd805]
+16:16:48,845 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e0cd805]
+16:16:48,846 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e0cd805]
+16:16:48,846 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:16:48,846 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:16:48,848 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:16:48,848 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:16:48,849 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:16:48,849 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+16:16:48,850 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:17:17,844 DEBUG DispatcherServlet:90 - POST "/books", parameters={}
+16:17:17,845 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.add(com.itheima.bean.Book)
+16:17:17,846 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json;charset=UTF-8" to [Book{id=null, type='计算机', name='java从入门到精通', description='作者张帅'}]
+16:17:17,846 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.add]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:17:17,846 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:17:17,847 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:17:17,848 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:17:17,849 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf06e4]
+16:17:17,849 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:17:17,849 DEBUG add:159 - ==>  Preparing: insert into tbl_book values(null,?,?,?) 
+16:17:17,850 DEBUG add:159 - ==> Parameters: 计算机(String), java从入门到精通(String), 作者张帅(String)
+16:17:17,851 DEBUG add:159 - <==    Updates: 1
+16:17:17,851 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf06e4]
+16:17:17,852 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf06e4]
+16:17:17,852 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf06e4]
+16:17:17,852 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf06e4]
+16:17:17,852 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:17:17,852 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:17:17,854 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:17:17,854 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:17:17,855 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:17:17,855 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20011, msg='null', data=true}]
+16:17:17,856 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:17:17,859 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:17:17,859 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:17:17,859 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:17:17,860 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:17:17,860 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:17:17,860 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:17:17,860 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b45ff31]
+16:17:17,860 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:17:17,861 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:17:17,861 DEBUG selectAll:159 - ==> Parameters: 
+16:17:17,862 DEBUG selectAll:159 - <==      Total: 13
+16:17:17,863 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b45ff31]
+16:17:17,863 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b45ff31]
+16:17:17,863 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b45ff31]
+16:17:17,863 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b45ff31]
+16:17:17,863 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:17:17,863 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:17:17,864 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:17:17,864 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:17:17,865 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:17:17,865 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到精通', description='作者张帅'}]}]
+16:17:17,866 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:18:52,377 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:18:52,378 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:18:52,379 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:18:52,499 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:18:52,500 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:18:52,500 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:18:52,501 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:18:52,501 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:18:52,501 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:18:52,502 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ae402a1]
+16:18:52,502 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:18:52,502 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:18:52,502 DEBUG selectAll:159 - ==> Parameters: 
+16:18:52,504 DEBUG selectAll:159 - <==      Total: 13
+16:18:52,505 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ae402a1]
+16:18:52,505 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ae402a1]
+16:18:52,506 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ae402a1]
+16:18:52,506 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ae402a1]
+16:18:52,506 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:18:52,506 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:18:52,507 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:18:52,507 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:18:52,508 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:18:52,508 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到精通', description='作者张帅'}]}]
+16:18:52,509 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:05,822 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:19:05,822 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:05,822 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:19:47,358 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:19:47,359 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,361 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,380 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+16:19:47,380 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+16:19:47,381 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,382 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,382 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,384 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,387 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+16:19:47,387 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+16:19:47,387 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+16:19:47,387 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+16:19:47,387 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+16:19:47,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,387 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,389 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,389 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,389 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,390 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,391 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:47,494 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:19:47,494 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:47,495 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:19:47,501 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:19:47,501 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:19:47,502 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:19:47,502 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:19:47,502 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:19:47,502 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:19:47,502 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c6110e]
+16:19:47,503 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:19:47,503 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:19:47,503 DEBUG selectAll:159 - ==> Parameters: 
+16:19:47,504 DEBUG selectAll:159 - <==      Total: 13
+16:19:47,505 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c6110e]
+16:19:47,505 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c6110e]
+16:19:47,505 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c6110e]
+16:19:47,505 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c6110e]
+16:19:47,505 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:19:47,505 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:19:47,506 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:19:47,506 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:19:47,507 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:19:47,507 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到精通', description='作者张帅'}]}]
+16:19:47,508 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:19:49,554 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/fonts/element-icons.woff", parameters={}
+16:19:49,555 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:19:49,556 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,333 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:21:53,334 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,335 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,358 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+16:21:53,359 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,360 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+16:21:53,361 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,362 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,363 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,366 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+16:21:53,366 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+16:21:53,366 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+16:21:53,366 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+16:21:53,366 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,366 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,367 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,367 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,367 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,367 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+16:21:53,367 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,368 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,368 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,369 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,370 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:53,469 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:21:53,470 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:53,470 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:21:53,480 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:21:53,481 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:21:53,481 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:21:53,481 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:21:53,482 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:21:53,482 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:21:53,482 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68305bff]
+16:21:53,483 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:21:53,483 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:21:53,483 DEBUG selectAll:159 - ==> Parameters: 
+16:21:53,485 DEBUG selectAll:159 - <==      Total: 13
+16:21:53,485 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68305bff]
+16:21:53,486 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68305bff]
+16:21:53,486 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68305bff]
+16:21:53,486 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68305bff]
+16:21:53,486 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:21:53,487 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:21:53,488 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:21:53,488 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:21:53,489 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:21:53,489 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到精通', description='作者张帅'}]}]
+16:21:53,490 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:21:56,285 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/fonts/element-icons.woff", parameters={}
+16:21:56,286 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:21:56,286 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:11,906 DEBUG DispatcherServlet:90 - PUT "/books", parameters={}
+16:22:11,907 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book)
+16:22:11,908 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json;charset=UTF-8" to [Book{id=14, type='计算机', name='java从入门到精', description='作者张帅帅'}]
+16:22:11,908 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:11,909 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:11,909 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:11,909 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:11,909 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee9a5e1]
+16:22:11,910 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:11,910 DEBUG update:159 - ==>  Preparing: update tbl_book set type=?,name=?,description=? where id=? 
+16:22:11,911 DEBUG update:159 - ==> Parameters: 计算机(String), java从入门到精(String), 作者张帅帅(String), 14(Integer)
+16:22:11,912 DEBUG update:159 - <==    Updates: 1
+16:22:11,912 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee9a5e1]
+16:22:11,912 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee9a5e1]
+16:22:11,912 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee9a5e1]
+16:22:11,913 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ee9a5e1]
+16:22:11,913 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:11,913 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:11,916 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:11,916 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:11,917 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:11,917 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20031, msg='null', data=true}]
+16:22:11,918 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:11,922 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:22:11,922 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:22:11,922 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:11,922 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:11,922 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:11,923 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:11,923 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f43c]
+16:22:11,923 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:11,924 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:22:11,924 DEBUG selectAll:159 - ==> Parameters: 
+16:22:11,926 DEBUG selectAll:159 - <==      Total: 13
+16:22:11,927 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f43c]
+16:22:11,927 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f43c]
+16:22:11,927 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f43c]
+16:22:11,928 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f43c]
+16:22:11,928 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:11,928 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:11,929 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:11,929 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:11,930 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:11,931 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到精', description='作者张帅帅'}]}]
+16:22:11,932 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:40,230 DEBUG DispatcherServlet:90 - PUT "/books", parameters={}
+16:22:40,230 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book)
+16:22:40,231 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json;charset=UTF-8" to [Book{id=14, type='计算机', name='java从入门到', description='作者张帅帅'}]
+16:22:40,231 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:40,232 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:40,232 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:40,232 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:40,232 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dc53af2]
+16:22:40,232 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:40,232 DEBUG update:159 - ==>  Preparing: update tbl_book set type=?,name=?,description=? where id=? 
+16:22:40,233 DEBUG update:159 - ==> Parameters: 计算机(String), java从入门到(String), 作者张帅帅(String), 14(Integer)
+16:22:40,234 DEBUG update:159 - <==    Updates: 1
+16:22:40,234 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dc53af2]
+16:22:40,234 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dc53af2]
+16:22:40,234 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dc53af2]
+16:22:40,234 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dc53af2]
+16:22:40,235 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:40,235 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:40,240 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:40,241 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:40,242 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:40,242 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20031, msg='null', data=true}]
+16:22:40,243 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:40,247 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:22:40,247 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:22:40,247 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:40,248 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:40,248 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:40,248 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:40,248 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f5bba3]
+16:22:40,248 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:40,249 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:22:40,249 DEBUG selectAll:159 - ==> Parameters: 
+16:22:40,251 DEBUG selectAll:159 - <==      Total: 13
+16:22:40,251 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f5bba3]
+16:22:40,251 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f5bba3]
+16:22:40,252 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f5bba3]
+16:22:40,252 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70f5bba3]
+16:22:40,252 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:40,252 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:40,253 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:40,253 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:40,254 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:40,254 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到', description='作者张帅帅'}]}]
+16:22:40,255 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,288 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:22:42,289 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,289 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,306 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+16:22:42,307 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,307 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+16:22:42,308 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+16:22:42,308 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+16:22:42,308 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+16:22:42,309 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,309 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,309 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,308 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,308 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+16:22:42,310 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,309 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,311 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,311 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,312 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+16:22:42,312 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,312 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,312 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,313 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,314 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:42,403 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:22:42,404 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:42,404 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:22:42,411 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:22:42,412 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:22:42,412 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:42,412 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:42,413 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:42,413 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:42,414 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11d904b7]
+16:22:42,414 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:42,414 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:22:42,414 DEBUG selectAll:159 - ==> Parameters: 
+16:22:42,415 DEBUG selectAll:159 - <==      Total: 13
+16:22:42,416 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11d904b7]
+16:22:42,416 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11d904b7]
+16:22:42,416 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11d904b7]
+16:22:42,417 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11d904b7]
+16:22:42,417 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:42,417 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:42,418 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:42,418 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:42,419 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:42,419 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到', description='作者张帅帅'}]}]
+16:22:42,420 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:44,212 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/fonts/element-icons.woff", parameters={}
+16:22:44,213 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:22:44,213 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:52,670 DEBUG DispatcherServlet:90 - PUT "/books", parameters={}
+16:22:52,671 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.update(com.itheima.bean.Book)
+16:22:52,672 DEBUG RequestResponseBodyMethodProcessor:90 - Read "application/json;charset=UTF-8" to [Book{id=14, type='计算机', name='java从入门到s', description='作者张帅帅是'}]
+16:22:52,672 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:52,672 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:52,672 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:52,673 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:52,673 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@596d606f]
+16:22:52,673 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:52,673 DEBUG update:159 - ==>  Preparing: update tbl_book set type=?,name=?,description=? where id=? 
+16:22:52,674 DEBUG update:159 - ==> Parameters: 计算机(String), java从入门到s(String), 作者张帅帅是(String), 14(Integer)
+16:22:52,675 DEBUG update:159 - <==    Updates: 1
+16:22:52,676 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@596d606f]
+16:22:52,676 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@596d606f]
+16:22:52,676 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@596d606f]
+16:22:52,676 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@596d606f]
+16:22:52,676 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:52,676 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:52,681 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:52,681 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:52,682 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:52,682 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20031, msg='null', data=true}]
+16:22:52,683 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:22:52,687 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:22:52,688 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:22:52,688 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:22:52,688 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:22:52,688 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:22:52,689 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:22:52,689 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cbc7c4]
+16:22:52,689 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:22:52,689 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:22:52,690 DEBUG selectAll:159 - ==> Parameters: 
+16:22:52,691 DEBUG selectAll:159 - <==      Total: 13
+16:22:52,691 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cbc7c4]
+16:22:52,691 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cbc7c4]
+16:22:52,691 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cbc7c4]
+16:22:52,691 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cbc7c4]
+16:22:52,691 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:22:52,692 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:22:52,692 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:22:52,692 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:22:52,693 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:22:52,693 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到s', description='作者张帅帅是'}]}]
+16:22:52,694 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,370 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:23:27,370 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,371 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,386 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+16:23:27,387 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+16:23:27,387 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+16:23:27,387 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+16:23:27,387 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+16:23:27,386 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,388 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,388 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,389 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,390 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,391 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,392 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,393 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,395 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+16:23:27,396 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,396 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:23:27,494 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:23:27,495 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:23:27,495 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:23:27,504 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:23:27,504 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:23:27,504 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:23:27,504 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:23:27,504 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:23:27,505 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:23:27,505 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cea08a1]
+16:23:27,505 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:23:27,505 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:23:27,506 DEBUG selectAll:159 - ==> Parameters: 
+16:23:27,508 DEBUG selectAll:159 - <==      Total: 13
+16:23:27,508 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cea08a1]
+16:23:27,509 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cea08a1]
+16:23:27,509 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cea08a1]
+16:23:27,509 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cea08a1]
+16:23:27,509 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:23:27,509 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:23:27,512 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:23:27,512 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:23:27,513 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:23:27,513 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到s', description='作者张帅帅是'}]}]
+16:23:27,514 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,319 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+16:24:46,319 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,320 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,336 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+16:24:46,337 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,338 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+16:24:46,339 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,339 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,340 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,348 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+16:24:46,348 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+16:24:46,348 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+16:24:46,348 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+16:24:46,349 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,349 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+16:24:46,348 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,348 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,349 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,349 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,349 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,350 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,351 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,352 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,352 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:46,446 DEBUG DispatcherServlet:90 - GET "/js/axios.min.map", parameters={}
+16:24:46,446 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@5286b044
+16:24:46,447 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+16:24:46,455 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:24:46,455 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:24:46,455 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:24:46,456 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:24:46,456 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:24:46,456 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:24:46,457 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a92b96f]
+16:24:46,457 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:24:46,457 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:24:46,458 DEBUG selectAll:159 - ==> Parameters: 
+16:24:46,460 DEBUG selectAll:159 - <==      Total: 13
+16:24:46,461 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a92b96f]
+16:24:46,461 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a92b96f]
+16:24:46,462 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a92b96f]
+16:24:46,462 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a92b96f]
+16:24:46,462 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:24:46,462 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:24:46,464 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:24:46,464 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:24:46,464 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:24:46,464 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}, Book{id=14, type='计算机', name='java从入门到s', description='作者张帅帅是'}]}]
+16:24:46,465 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:54,844 DEBUG DispatcherServlet:90 - DELETE "/books/14", parameters={}
+16:24:54,844 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.delete(java.lang.Integer)
+16:24:54,845 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:24:54,845 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:24:54,845 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:24:54,845 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:24:54,846 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76feb5a2]
+16:24:54,846 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:24:54,846 DEBUG delete:159 - ==>  Preparing: delete from tbl_book where id=? 
+16:24:54,846 DEBUG delete:159 - ==> Parameters: 14(Integer)
+16:24:54,847 DEBUG delete:159 - <==    Updates: 1
+16:24:54,847 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76feb5a2]
+16:24:54,847 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76feb5a2]
+16:24:54,848 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76feb5a2]
+16:24:54,848 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76feb5a2]
+16:24:54,848 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:24:54,848 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:24:54,851 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:24:54,851 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:24:54,852 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:24:54,852 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20021, msg='null', data=true}]
+16:24:54,852 DEBUG DispatcherServlet:1123 - Completed 200 OK
+16:24:54,856 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+16:24:54,856 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+16:24:54,856 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+16:24:54,857 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@28bad000] for JDBC transaction
+16:24:54,857 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] to manual commit
+16:24:54,857 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+16:24:54,857 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b04c005]
+16:24:54,858 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] will be managed by Spring
+16:24:54,858 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+16:24:54,858 DEBUG selectAll:159 - ==> Parameters: 
+16:24:54,859 DEBUG selectAll:159 - <==      Total: 12
+16:24:54,860 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b04c005]
+16:24:54,860 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b04c005]
+16:24:54,861 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b04c005]
+16:24:54,861 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b04c005]
+16:24:54,861 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+16:24:54,861 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@28bad000]
+16:24:54,863 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@28bad000] after transaction
+16:24:54,863 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+16:24:54,864 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+16:24:54,864 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+16:24:54,865 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:54:30,614  INFO DispatcherServlet:521 - Initializing Servlet 'springmvc'
+19:54:30,654 DEBUG XmlWebApplicationContext:590 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+19:54:31,276 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\controller\BookController.class]
+19:54:31,283 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\service\impl\BookServiceImpl.class]
+19:54:31,409 DEBUG XmlBeanDefinitionReader:395 - Loaded 10 bean definitions from class path resource [applicationContext.xml]
+19:54:31,410 DEBUG XmlBeanDefinitionReader:395 - Loaded 34 bean definitions from class path resource [springmvc.xml]
+19:54:31,494 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+19:54:31,614 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+19:54:31,633 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+19:54:31,637 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\dao\BookDao.class]
+19:54:31,638 DEBUG ClassPathMapperScanner:49 - Creating MapperFactoryBean with name 'bookDao' and 'com.itheima.dao.BookDao' mapperInterface
+19:54:31,638 DEBUG ClassPathMapperScanner:49 - Enabling autowire by type for MapperFactoryBean with name 'bookDao'.
+19:54:31,640 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+19:54:31,659 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.driverClass]
+19:54:31,665 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.driverClass] not found - trying original name [jdbc.driverClass]. javax.naming.NameNotFoundException: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].
+19:54:31,665 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.driverClass]
+19:54:31,667 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.driverClass] threw NamingException with message: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].. Returning null.
+19:54:31,667 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driverClass' in PropertySource 'localProperties' with value of type String
+19:54:31,667 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+19:54:31,668 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+19:54:31,668 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.url]
+19:54:31,669 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+19:54:31,669 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+19:54:31,669 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+19:54:31,670 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+19:54:31,670 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.username]
+19:54:31,670 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+19:54:31,671 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+19:54:31,671 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+19:54:31,672 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+19:54:31,673 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.password]
+19:54:31,674 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+19:54:31,674 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+19:54:31,676 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+19:54:31,678 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+19:54:31,679 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+19:54:31,681 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+19:54:31,682 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+19:54:31,684 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+19:54:31,726 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1afc3c09]
+19:54:31,728 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookController'
+19:54:31,760 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookServiceImpl'
+19:54:31,763 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookDao'
+19:54:31,776 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+19:54:31,778 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+19:54:31,858 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+19:54:31,860 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+19:54:31,913 DEBUG SqlSessionFactoryBean:49 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+19:54:31,980 DEBUG SqlSessionFactoryBean:49 - Property 'mapperLocations' was not specified.
+19:54:32,071 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+19:54:32,099 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+19:54:32,141 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+19:54:32,146 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+19:54:32,149 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+19:54:32,295 DEBUG RequestMappingHandlerMapping:332 - 5 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+19:54:32,299 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+19:54:32,658 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+19:54:32,695 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+19:54:32,716 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+19:54:32,720 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+19:54:32,747 DEBUG ExceptionHandlerExceptionResolver:302 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+19:54:32,748 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+19:54:32,753 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+19:54:32,756 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+19:54:32,764 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+19:54:32,765 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+19:54:32,766 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+19:54:32,781 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+19:54:32,785 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+19:54:32,792 DEBUG SimpleUrlHandlerMapping:139 - Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+19:54:32,794 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'transactionManager'
+19:54:32,807 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+19:54:32,846 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+19:54:32,846 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+19:54:32,847 DEBUG JndiTemplate:154 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+19:54:32,847 DEBUG JndiPropertySource:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+19:54:32,850 DEBUG DispatcherServlet:538 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+19:54:32,851  INFO DispatcherServlet:543 - Completed initialization in 2219 ms
+19:55:10,185 DEBUG DispatcherServlet:90 - GET "/", parameters={}
+19:55:10,192 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:10,202 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+19:55:10,815 DEBUG DispatcherServlet:90 - GET "/favicon.ico", parameters={}
+19:55:10,815 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:10,816 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+19:55:28,620 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+19:55:28,621 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,622 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,682 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+19:55:28,683 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,684 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,695 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+19:55:28,696 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,698 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,724 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+19:55:28,725 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,728 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,730 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+19:55:28,731 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,732 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,734 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+19:55:28,735 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,736 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,739 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+19:55:28,740 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,740 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,748 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+19:55:28,749 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:28,750 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:28,905 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+19:55:28,908 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+19:55:28,951 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:55:29,065  INFO DruidDataSource:983 - {dataSource-1} inited
+19:55:29,406 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] for JDBC transaction
+19:55:29,411 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] to manual commit
+19:55:29,420 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+19:55:29,426 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2356e0]
+19:55:29,439 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] will be managed by Spring
+19:55:29,445 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+19:55:29,479 DEBUG selectAll:159 - ==> Parameters: 
+19:55:29,503 DEBUG selectAll:159 - <==      Total: 12
+19:55:29,505 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2356e0]
+19:55:29,506 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2356e0]
+19:55:29,507 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2356e0]
+19:55:29,508 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c2356e0]
+19:55:29,508 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+19:55:29,509 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1]
+19:55:29,510 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] after transaction
+19:55:29,511 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+19:55:29,594 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+19:55:29,596 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+19:55:29,653 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:34,844 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/fonts/element-icons.woff", parameters={}
+19:55:34,845 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@4bbb5bd5
+19:55:34,855 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:55:49,974 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+19:55:49,975 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+19:55:49,975 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:55:49,975 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] for JDBC transaction
+19:55:49,976 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] to manual commit
+19:55:49,976 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+19:55:49,977 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfc1e06]
+19:55:49,977 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] will be managed by Spring
+19:55:49,977 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+19:55:49,978 DEBUG selectAll:159 - ==> Parameters: 
+19:55:49,981 DEBUG selectAll:159 - <==      Total: 12
+19:55:49,982 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfc1e06]
+19:55:49,982 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfc1e06]
+19:55:49,983 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfc1e06]
+19:55:49,983 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2dfc1e06]
+19:55:49,983 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+19:55:49,984 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1]
+19:55:49,984 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] after transaction
+19:55:49,985 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+19:55:49,986 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+19:55:49,986 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+19:55:49,990 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:56:06,431 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+19:56:06,431 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+19:56:06,431 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:56:06,432 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] for JDBC transaction
+19:56:06,433 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] to manual commit
+19:56:06,433 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+19:56:06,434 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dc3a8d]
+19:56:06,434 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] will be managed by Spring
+19:56:06,434 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+19:56:06,435 DEBUG selectAll:159 - ==> Parameters: 
+19:56:06,437 DEBUG selectAll:159 - <==      Total: 12
+19:56:06,438 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dc3a8d]
+19:56:06,438 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dc3a8d]
+19:56:06,438 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dc3a8d]
+19:56:06,439 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dc3a8d]
+19:56:06,439 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+19:56:06,439 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1]
+19:56:06,441 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] after transaction
+19:56:06,442 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+19:56:06,442 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+19:56:06,444 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+19:56:06,444 DEBUG DispatcherServlet:1123 - Completed 200 OK
+19:56:11,035 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+19:56:11,035 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+19:56:11,035 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+19:56:11,036 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] for JDBC transaction
+19:56:11,036 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] to manual commit
+19:56:11,037 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+19:56:11,037 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29ccb7a]
+19:56:11,037 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] will be managed by Spring
+19:56:11,037 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+19:56:11,038 DEBUG selectAll:159 - ==> Parameters: 
+19:56:11,040 DEBUG selectAll:159 - <==      Total: 12
+19:56:11,040 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29ccb7a]
+19:56:11,041 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29ccb7a]
+19:56:11,041 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29ccb7a]
+19:56:11,042 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29ccb7a]
+19:56:11,042 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+19:56:11,042 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1]
+19:56:11,044 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b23b7d1] after transaction
+19:56:11,044 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+19:56:11,045 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+19:56:11,045 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+19:56:11,047 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:04:43,633  INFO DispatcherServlet:521 - Initializing Servlet 'springmvc'
+20:04:43,667 DEBUG XmlWebApplicationContext:590 - Refreshing WebApplicationContext for namespace 'springmvc-servlet'
+20:04:44,042 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\controller\BookController.class]
+20:04:44,047 DEBUG ClassPathBeanDefinitionScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\service\impl\BookServiceImpl.class]
+20:04:44,169 DEBUG XmlBeanDefinitionReader:395 - Loaded 10 bean definitions from class path resource [applicationContext.xml]
+20:04:44,170 DEBUG XmlBeanDefinitionReader:395 - Loaded 34 bean definitions from class path resource [springmvc.xml]
+20:04:44,281 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:04:44,385 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+20:04:44,412 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+20:04:44,417 DEBUG ClassPathMapperScanner:437 - Identified candidate component class: file [F:\Code129_JavaBasicFramework\day35\springmvc05_ssm\target\classes\com\itheima\dao\BookDao.class]
+20:04:44,418 DEBUG ClassPathMapperScanner:49 - Creating MapperFactoryBean with name 'bookDao' and 'com.itheima.dao.BookDao' mapperInterface
+20:04:44,419 DEBUG ClassPathMapperScanner:49 - Enabling autowire by type for MapperFactoryBean with name 'bookDao'.
+20:04:44,421 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+20:04:44,443 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.driverClass]
+20:04:44,447 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.driverClass] not found - trying original name [jdbc.driverClass]. javax.naming.NameNotFoundException: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].
+20:04:44,447 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.driverClass]
+20:04:44,449 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.driverClass] threw NamingException with message: Name [jdbc.driverClass] is not bound in this Context. Unable to find [jdbc.driverClass].. Returning null.
+20:04:44,450 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.driverClass' in PropertySource 'localProperties' with value of type String
+20:04:44,450 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.url]
+20:04:44,451 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+20:04:44,452 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.url]
+20:04:44,452 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+20:04:44,453 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+20:04:44,453 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.username]
+20:04:44,454 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+20:04:44,454 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.username]
+20:04:44,454 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+20:04:44,455 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+20:04:44,455 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/jdbc.password]
+20:04:44,455 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+20:04:44,456 DEBUG JndiTemplate:154 - Looking up JNDI object with name [jdbc.password]
+20:04:44,456 DEBUG JndiPropertySource:101 - JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+20:04:44,456 DEBUG PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+20:04:44,457 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:04:44,459 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:04:44,460 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+20:04:44,463 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:04:44,465 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:04:44,469 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+20:04:44,512 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@26dc2ee1]
+20:04:44,514 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookController'
+20:04:44,577 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookServiceImpl'
+20:04:44,579 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'bookDao'
+20:04:44,595 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'sqlSessionFactory'
+20:04:44,597 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'dataSource'
+20:04:44,710 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+20:04:44,713 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+20:04:44,906 DEBUG SqlSessionFactoryBean:49 - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+20:04:45,204 DEBUG SqlSessionFactoryBean:49 - Property 'mapperLocations' was not specified.
+20:04:45,296 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+20:04:45,317 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+20:04:45,352 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+20:04:45,356 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+20:04:45,358 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+20:04:45,469 DEBUG RequestMappingHandlerMapping:332 - 5 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+20:04:45,472 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+20:04:45,983 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+20:04:46,023 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+20:04:46,056 DEBUG RequestMappingHandlerAdapter:622 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+20:04:46,060 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+20:04:46,083 DEBUG ExceptionHandlerExceptionResolver:302 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+20:04:46,085 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+20:04:46,093 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+20:04:46,097 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+20:04:46,108 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+20:04:46,110 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+20:04:46,111 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+20:04:46,130 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+20:04:46,136 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+20:04:46,146 DEBUG SimpleUrlHandlerMapping:139 - Patterns [/**] in 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+20:04:46,147 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'transactionManager'
+20:04:46,164 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+20:04:46,213 DEBUG JndiTemplate:154 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+20:04:46,214 DEBUG JndiLocatorDelegate:102 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+20:04:46,214 DEBUG JndiTemplate:154 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+20:04:46,215 DEBUG JndiPropertySource:101 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+20:04:46,217 DEBUG DispatcherServlet:538 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+20:04:46,218  INFO DispatcherServlet:543 - Completed initialization in 2582 ms
+20:04:50,240 DEBUG DispatcherServlet:90 - GET "/", parameters={}
+20:04:50,250 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:04:50,262 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+20:04:50,639 DEBUG DispatcherServlet:90 - GET "/favicon.ico", parameters={}
+20:04:50,640 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:04:50,640 DEBUG DispatcherServlet:1123 - Completed 404 NOT_FOUND
+20:05:02,397 DEBUG DispatcherServlet:90 - GET "/pages/books.html", parameters={}
+20:05:02,398 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,400 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,439 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.css", parameters={}
+20:05:02,440 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,441 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,450 DEBUG DispatcherServlet:90 - GET "/plugins/font-awesome/css/font-awesome.min.css", parameters={}
+20:05:02,451 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,452 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,457 DEBUG DispatcherServlet:90 - GET "/js/jquery.min.js", parameters={}
+20:05:02,457 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,458 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,462 DEBUG DispatcherServlet:90 - GET "/js/axios-0.18.0.js", parameters={}
+20:05:02,462 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,463 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,467 DEBUG DispatcherServlet:90 - GET "/css/style.css", parameters={}
+20:05:02,467 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,468 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,476 DEBUG DispatcherServlet:90 - GET "/plugins/elementui/index.js", parameters={}
+20:05:02,477 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,480 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,484 DEBUG DispatcherServlet:90 - GET "/js/vue.js", parameters={}
+20:05:02,485 DEBUG SimpleUrlHandlerMapping:420 - Mapped to org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@2637748d
+20:05:02,488 DEBUG DispatcherServlet:1123 - Completed 200 OK
+20:05:02,674 DEBUG DispatcherServlet:90 - GET "/books", parameters={}
+20:05:02,676 DEBUG RequestMappingHandlerMapping:420 - Mapped to public com.itheima.bean.Result com.itheima.controller.BookController.selectAll()
+20:05:02,714 DEBUG DataSourceTransactionManager:372 - Creating new transaction with name [com.itheima.service.impl.BookServiceImpl.selectAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+20:05:02,835  INFO DruidDataSource:983 - {dataSource-1} inited
+20:05:03,088 DEBUG DataSourceTransactionManager:264 - Acquired Connection [com.mysql.jdbc.JDBC4Connection@68e0fa1b] for JDBC transaction
+20:05:03,092 DEBUG DataSourceTransactionManager:281 - Switching JDBC Connection [com.mysql.jdbc.JDBC4Connection@68e0fa1b] to manual commit
+20:05:03,100 DEBUG SqlSessionUtils:49 - Creating a new SqlSession
+20:05:03,106 DEBUG SqlSessionUtils:49 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a5d5643]
+20:05:03,117 DEBUG SpringManagedTransaction:49 - JDBC Connection [com.mysql.jdbc.JDBC4Connection@68e0fa1b] will be managed by Spring
+20:05:03,123 DEBUG selectAll:159 - ==>  Preparing: select * from tbl_book 
+20:05:03,158 DEBUG selectAll:159 - ==> Parameters: 
+20:05:03,183 DEBUG selectAll:159 - <==      Total: 12
+20:05:03,185 DEBUG SqlSessionUtils:49 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a5d5643]
+20:05:03,185 DEBUG SqlSessionUtils:49 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a5d5643]
+20:05:03,186 DEBUG SqlSessionUtils:49 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a5d5643]
+20:05:03,186 DEBUG SqlSessionUtils:49 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a5d5643]
+20:05:03,186 DEBUG DataSourceTransactionManager:743 - Initiating transaction commit
+20:05:03,187 DEBUG DataSourceTransactionManager:326 - Committing JDBC transaction on Connection [com.mysql.jdbc.JDBC4Connection@68e0fa1b]
+20:05:03,188 DEBUG DataSourceTransactionManager:384 - Releasing JDBC Connection [com.mysql.jdbc.JDBC4Connection@68e0fa1b] after transaction
+20:05:03,189 DEBUG DataSourceUtils:340 - Returning JDBC Connection to DataSource
+20:05:03,288 DEBUG RequestResponseBodyMethodProcessor:267 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+20:05:03,289 DEBUG RequestResponseBodyMethodProcessor:90 - Writing [Result{code=20051, msg='null', data=[Book{id=1, type='计算机理论', name='Spring实战 第5版', description='Spring入门经典教程，深入理解Spring原理技术内幕'}, Book{id=2, type='计算机理论', name='Spring 5核心原理与30个类手写实战', description='十年沉淀之作，手写Spring精华思想'}, Book{id=3, type='计算机理论', name='Spring 5 设计模式', description='深入Spring源码剖析Spring源码中蕴含的10大设计模式'}, Book{id=4, type='计算机理论', name='Spring MVC+MyBatis开发从入门到项目实战', description='全方位解析面向Web应用的轻量级框架，带你成为Spring MVC开发高手'}, Book{id=5, type='计算机理论', name='轻量级Java Web企业应用实战', description='源码级剖析Spring框架，适合已掌握Java基础的读者'}, Book{id=6, type='计算机理论', name='Java核心技术 卷I 基础知识（原书第11版）', description='Core Java 第11版，Jolt大奖获奖作品，针对Java SE9、10、11全面更新'}, Book{id=7, type='计算机理论', name='深入理解Java虚拟机', description='5个维度全面剖析JVM，大厂面试知识点全覆盖'}, Book{id=8, type='计算机理论', name='Java编程思想（第4版）', description='Java学习必读经典,殿堂级著作！赢得了全球程序员的广泛赞誉'}, Book{id=9, type='计算机理论', name='零基础学Java（全彩版）', description='零基础自学编程的入门图书，由浅入深，详解Java语言的编程思想和核心技术'}, Book{id=10, type='市场营销', name='直播就该这么做：主播高效沟通实战指南', description='李子柒、李佳琦、薇娅成长为网红的秘密都在书中'}, Book{id=11, type='市场营销', name='直播销讲实战一本通', description='和秋叶一起学系列网络营销书籍'}, Book{id=12, type='市场营销', name='直播带货：淘宝、天猫直播从新手到高手', description='一本教你如何玩转直播的书，10堂课轻松实现带货月入3W+'}]}]
+20:05:03,310 DEBUG DispatcherServlet:1123 - Completed 200 OK
