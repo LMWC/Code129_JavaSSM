@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--3.p命令空间注入  是setter注入的简化 属性必须提供set方法
+        使用步骤：
+            1.类中属性提供set方法
+            2.在spring配置文件中引入p命令空间
+            3.在bean标签中使用 p:属性=属性值  或 p:属性-ref=属性值
+
+    -->
+    <!--需求：在UserServiceImpl类中调用UserDaoImpl类的add方法-->
+    <!--
+        分析：
+            1.需要在Spring配置文件中使用bean创建UserDaoImpl类的对象
+            2.使用set注入将UserDaoImpl类的对象注入到UserServiceImpl类的userDao属性中
+    -->
+
+    <!--通过bean标签声明对象创建-->
+    <bean id="ud" class="com.itheima.dao.impl.UserDaoImpl"/>
+
+
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl03" p:username="王五" p:address="东莞" p:userDao-ref="ud"></bean>
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--4.自动装配
+        概念：Spring IOC容器根据其管理的bean之前的依赖关系 自动为bean的属性赋值
+        注意事项：
+            1.自动装配用于引用类型【IOC容器中管理的bean对象】依赖注入，不能对简单类型进行操作
+            2.使用按类型装配时（byType）必须保障容器中相同类型的bean唯一，推荐使用
+            3.使用按名称装配时（byName）必须保障容器中具有指定名称的bean，因变量名与配置耦合，不推荐使用
+            4.自动装配优先级低于setter注入与构造器注入，同时出现时自动装配配置失效
+
+
+    -->
+
+    <!--通过bean标签声明对象创建-->
+    <bean id="ud" class="com.itheima.dao.impl.UserDaoImpl"/>
+
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"/>
+
+
+    <!-- 按类型自动装配  要求相同类型的bean只能有一个  【推荐】-->
+    <!--<bean id="us" class="com.itheima.service.impl.UserServiceImpl04" autowire="byType"></bean>-->
+
+    <!--按名称自动装配  相同类型下可以有多个bean 但是要求必须要有一个bean的id值与属性名称一致 【不推荐】-->
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl04" autowire="byName"></bean>
+
+</beans>

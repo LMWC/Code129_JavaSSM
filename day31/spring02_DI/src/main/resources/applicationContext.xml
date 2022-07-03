@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1.setter注入：
+        property标签：为对象的属性赋值
+            name属性：属性名称
+            value属性：为简单数据类型赋值
+            ref属性：为引用类型【一般指的都是IOC容器中管理的bean对象】赋值
+        注意：value属性和ref属性不能同时使用
+
+    -->
+    <!--需求：在UserServiceImpl类中调用UserDaoImpl类的add方法-->
+    <!--
+        分析：
+            1.需要在Spring配置文件中使用bean创建UserDaoImpl类的对象
+            2.使用set注入将UserDaoImpl类的对象注入到UserServiceImpl类的userDao属性中
+    -->
+
+    <!--通过bean标签声明对象创建-->
+    <bean id="ud" class="com.itheima.dao.impl.UserDaoImpl"/>
+
+
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl" >
+        <property name="username" value="杨杰"/>
+        <property name="address" value="深圳"/>
+        <property name="userDao" ref="ud"/>
+    </bean>
+</beans>

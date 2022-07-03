@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--2.构造器注入：
+       constructor-arg：设置构造方法参数的值
+            常用属性：
+                name：参数名称
+                value：设置简单类型参数值
+                ref：设置引用类型【IOC容器中管理的bean对象】参数值
+            注意：
+                1.value和ref属性不能同时使用
+                2.构造器注入 参数的个数要和构造方法保存一致
+            了解的属性：
+                index：参数的索引
+
+
+    -->
+    <!--需求：在UserServiceImpl类中调用UserDaoImpl类的add方法-->
+    <!--
+        分析：
+            1.需要在Spring配置文件中使用bean创建UserDaoImpl类的对象
+            2.使用set注入将UserDaoImpl类的对象注入到UserServiceImpl类的userDao属性中
+    -->
+
+    <!--通过bean标签声明对象创建-->
+    <bean id="ud" class="com.itheima.dao.impl.UserDaoImpl"/>
+
+
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl02" >
+        <constructor-arg name="username" value="李四"/>
+        <constructor-arg name="address" value="广州"/>
+        <constructor-arg name="userDao" ref="ud"/>
+
+        <!--了解的属性index-->
+        <!--<constructor-arg index="0" value="李四"/>
+        <constructor-arg index="1" value="广州"/>
+        <constructor-arg index="2" ref="ud"/>-->
+
+        <!--了解的属性type-->
+        <!--<constructor-arg type="java.lang.String" value="广州"/>
+        <constructor-arg type="java.lang.String" value="李四"/>
+        <constructor-arg type="com.itheima.dao.UserDao" ref="ud"/>-->
+
+    </bean>
+</beans>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+
+
+    <!--1.让Spring 管理目标方法所在类的对象和增强代码方法所在类的对象-->
+
+    <!--创建UserServiceImpl对象-->
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl"/>
+
+    <!--创建增强类MyAdvice对象-->
+    <bean id="myAdvice" class="com.itheima.advice.MyAdvice"/>
+
+    <!--2.AOP配置-->
+    <!--
+        增强类型：
+            前置增强：将增强代码放在方法执行前执行 ，如果增强代码执行有异常，则会阻止目标方法执行         应用场景：数据校验
+            后置增强：目标方法正常执行完毕后执行，如果目标方法执行出现异常，则不会执行后置增强代码         应用场景：返回值处理
+            异常抛出后增强：目标方法执行出现异常，会执行异常抛出后增强代码，如果目标方法正常执行，则不执行   应用场景：异常处理
+            最终增强：不管目标方法执行是否出现异常。都会执行最终增强代码，相当于finally代码块            应用场景：关闭对象 释放资源
+            环绕增强：功能比较强大，包含了上面的四种增强，还可以阻止目标方法的执行
+                注意：
+                    1.可以控制目标方法是否执行
+                    2.可以修改目标方法的参数
+                    3.可以修改目标方法的返回值
+                    4.可以使用环绕增强替代上面的四种增强
+    -->
+    <aop:config>
+        <!--2.1:抽取切点表达式-->
+        <aop:pointcut id="pt" expression="execution(* com.itheima..*.*(..))"/>
+
+        <!--2.2：配置切面-->
+        <aop:aspect ref="myAdvice">
+            <!--
+                <aop:before method="before" pointcut-ref="pt"/>
+                <aop:after-returning method="afterReturning" pointcut-ref="pt"/>
+                <aop:after-throwing method="afterThrowing" pointcut-ref="pt"/>
+                <aop:after method="after" pointcut-ref="pt"/>
+            -->
+            <aop:around method="around" pointcut-ref="pt"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

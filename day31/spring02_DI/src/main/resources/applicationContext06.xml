@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--6.引入外部的properties配置文件，将properties配置文件中的数据赋值到指定对象的属性上
+        实现思路：
+            1.准备一个properties文件,放在resources目录下
+            2.将properties文件引入到Spring中
+            3.从properties文件中取值  ${properties的key}
+    -->
+
+    <!--引入外部的properties配置文件-->
+    <context:property-placeholder location="db.properties"/>
+
+    <!--通过bean标签声明对象创建-->
+    <bean id="us" class="com.itheima.service.impl.UserServiceImpl06">
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+</beans>

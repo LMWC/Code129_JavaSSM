@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--0.引入db.properties配置文件-->
+    <context:property-placeholder location="db.properties"/>
+
+    <!--1.配置数据源  使用Druid连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--2.Spring托管SqlSessionFactory对象 【加载数据源 得到SqlSessionFactory对象】
+          由于SqlSessionFactory是一个接口  要创建SqlSessionFactory对象交给IOC容器管理 此时就需要使用到mybatis-spring整合jar包中提供的一个SqlSessionFactory实例工厂类
+
+          SqlSessionFactoryBean:是一个实例工厂，实现了Spring提供的FactoryBean接口，用于加载数据源，创建SqlSessionFactory对象的，
+                作用：
+                    1.得到SqlSessionFactory对象
+                    2.从而可以继续得到SqlSession对象
+    -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--细节1：设置别名-->
+        <property name="typeAliasesPackage" value="com.itheima.bean"/>
+        <!--细节2：引入mybatis配置文件-->
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <!--细节3：引入映射文件-->
+        <!--<property name="mapperLocations" value="classpath:cn/shuaige/*Dao.xml"/>-->
+
+    </bean>
+
+    <!--3.Spring托管dao接口代理对象
+        扫描dao接口所在的包，根据dao接口创建出对应的代理对象，放入到Spring IOC容器中管理起来
+        此时：需要使用到一个类 创建它的对象 完成这件事情     MapperScannerConfigurer：对象一创建 马上就会干活，创建dao接口的代理对象
+    -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.itheima.dao"/>
+    </bean>
+
+
+    <!--创建AccountServiceImpl类的对象 注入AccountDao接口的代理对象-->
+    <!--<bean id="as" class="com.itheima.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>-->
+
+    <!--开启注解扫描-->
+    <context:component-scan base-package="com.itheima"/>
+</beans>

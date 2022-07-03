@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--0.引入db.properties配置文件-->
+    <context:property-placeholder location="db.properties"/>
+
+    <!--1.配置数据源  使用Druid连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--2.Spring托管SqlSessionFactory对象 【加载数据源 得到SqlSessionFactory对象】 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--细节1：设置别名-->
+        <property name="typeAliasesPackage" value="com.itheima.bean"/>
+    </bean>
+
+    <!--3.Spring托管dao接口代理对象-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.itheima.dao"/>
+    </bean>
+
+    <!--开启注解扫描-->
+    <context:component-scan base-package="com.itheima"/>
+
+    <!--============================================Spring事务管理配置===========================================-->
+    <!--1.配置Spring事务管理员对象-->
+    <!--
+        PlatformTransactionManager接口：用于开启事务，提交事务或者回滚事务 【JDBC事务管理：使用Connection连接对象】
+            MyBatis|Spring JDBC ==》DataSourceTransactionManager
+            Hibernate  ==》 HibernateTransactionManager
+    -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--2.配置事务增强-->
+    <!--
+        tx:advice标签：事务增强,相当于之前AOP中增强代码方法所在的类【增强类】
+            id：通知的唯一标识  增强对象
+            transaction-manager：设置事务管理员  使用哪个事务管理员去对指定的方法执行事务管理
+                如果事务管理员bean对象的id为transactionManager，则tx:advice标签可以不用设置transaction-manager属性，
+                如果名字不为transactionManager，则必须指定和上面的一致
+            tx:attributes：事务属性 配置不同类别方法的事务属性
+                tx:method：为指定的方法设置事务属性  可以有多个
+    -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="add*" timeout="-1" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="update*" timeout="-1" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="del*" timeout="-1" read-only="false" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="find*" timeout="-1" read-only="true" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="select*" timeout="-1" read-only="true" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="transfer"/>
+            <tx:method name="log" propagation="REQUIRES_NEW"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--
+        描述：对com.itheima包及其子包下的所有方法根据事务通知中配置的事务规则设置事务增强，由事务管理员对象负责执行事务操作。
+             如果对执行的目标方法 找不到对应的事务规则，则没有添加事务管理。
+    -->
+    <!--3.将事务增强和目标方法整合到一起-->
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.itheima..*.*(..))"/>
+    </aop:config>
+
+</beans>
