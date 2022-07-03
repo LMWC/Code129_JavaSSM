@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--TODO:配置UserDao、GoodsDao、OrderDao-->
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"/>
+    <bean id="goodsDao" class="com.itheima.dao.impl.GoodsDaoImpl"/>
+    <bean id="orderDao" class="com.itheima.dao.impl.OrderDaoImpl"/>
+
+    <!--TODO:配置UserService、GoodsService、OrderService -->
+    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <bean id="goodsService" class="com.itheima.service.impl.GoodsServiceImpl">
+        <property name="goodsDao" ref="goodsDao"/>
+    </bean>
+    <bean id="orderService" class="com.itheima.service.impl.OrderServiceImpl">
+        <property name="orderDao" ref="orderDao"/>
+        <property name="userService" ref="userService"/>
+        <property name="goodsService" ref="goodsService"/>
+    </bean>
+</beans>
