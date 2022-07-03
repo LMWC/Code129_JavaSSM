@@ -1,2 +1,2 @@
-# Code129_SSM
-Code129_SSM学习代码
+# Code129_JavaSSM
+Code129_JavaSSM学习代码
